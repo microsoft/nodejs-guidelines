@@ -13,7 +13,7 @@ Note that this is not intended to be a comprehensive set of recommendations, nor
 Let's start with the basics. 
 
 1. Install Node.js: https://nodejs.org
-> :bulb: after you install Node.js, you'll want to ensure your `PATH` variable is set properly so that you can access 
+> :bulb: when you install Node.js, you'll want to ensure your `PATH` variable is set to your install path so you can call Node from anywhere.
 
 2. create a new file:
   ```js
