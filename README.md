@@ -26,8 +26,19 @@ One of the painpoints we hear from users is that the command line console in Win
   * VSCode - light weight and cross-platform 
 
 ## Compiling native addon modules
-Got a C++ library that you want to take advantage of in your Node.js app? Or running into dreaded node-gyp issues and have no idea what's going on? Let us explain...
+There are three primary reasons you might be interested in this section: 
+* you have an existing C++ libary you'd like to take advantage of in your Node.js application
+* you are interested in optimizing the performance of some code by writing it in C++
+* You're running into dreaded node-gyp issues and have no idea what's going on
 
+### Just tell me how to set up my environment!
+* Download Python 2.7 (3.x will not work)
+* Download Visual Studio 2015 Community
+  * during install, be sure to check the the C++ option
+
+### C++ and Node.js? Tell me more...
+* Node.js addon documentation: https://nodejs.org/api/addons.html
+* NodeSchool tutorial https://github.com/workshopper/goingnative
 
 
 ## Databases
@@ -69,4 +80,8 @@ Got a C++ library that you want to take advantage of in your Node.js app? Or run
 ## Contribution guidelines
 
 ## Why does this exist?
-This exists because a bunch of people at Microsoft are really excited about Node.js and want to make sure your experience is as awesome as it can possibly be. We also want a centralized place for us to get feedback and collaborate with the community on various painpoints, and communicate status on these issues. 
+This exists because a bunch of people at Microsoft are really excited about Node.js and want to make sure your experience is as awesome as it can possibly be. In particular, our goals here are to:
+* make it easier for people building on Microsoft platforms to get started on the right foot
+* promote our Node.js offerings in a centralized place so it's easier to iron out compelling end-to-end stories.
+* provide a forum to connect with various teams at Microsoft working to improve the Node.js experience
+* communicate status on key issues we're helping to address
