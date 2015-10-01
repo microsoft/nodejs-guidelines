@@ -3,8 +3,6 @@
 ### Getting to "Hello, World"
 * Install Node.js: https://nodejs.org/en/
 
-* Upgrading npm to the latest version: https://www.npmjs.com/package/npm-windows-upgrade
-
 ### Customizing your environment
 One of the painpoints we hear from users is that the command line console in Windows could use some work. We hear ya, and we're [working on it.](https://wpdev.uservoice.com/forums/266908) In the meantime, we want to ensure you have the best experience possible. So here's some links to some recommended tools to complement your existing experience.
 
@@ -18,6 +16,7 @@ One of the painpoints we hear from users is that the command line console in Win
 * Putty: ssh client
 * nvm-windows: https://github.com/coreybutler/nvm-windows - there are new versions of Node.js coming out all the time, so it can be annoying to migrate between versions. nmv-windows makes this way easier to switch between various versions, so we 
 * Fiddler: a web debugging proxy for Node.js
+* Upgrading npm to the latest version: https://www.npmjs.com/package/npm-windows-upgrade
 
 ### Editors and IDEs
   * End-to-End tooling
@@ -40,10 +39,8 @@ There are three primary reasons you might be interested in this section:
 * Node.js addon documentation: https://nodejs.org/api/addons.html
 * NodeSchool tutorial https://github.com/workshopper/goingnative
 
-
 ## Databases
 * setting up MongoDB
-
 
 ## Working with .NET
 * using Edge.js
@@ -73,7 +70,8 @@ There are three primary reasons you might be interested in this section:
 * Cross-platform remote debugging
 * iisnode
 
-## Node efforts at Microsoft
+## Open-source Node.js projects
+https://github.com/Microsoft?utf8=%E2%9C%93&query=nodeb
 
 ## Teams at MSFT using Node.js
 
