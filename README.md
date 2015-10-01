@@ -21,8 +21,12 @@ One of the painpoints we hear from users is that the command line console in Win
 ### Editors and IDEs
   * End-to-End tooling
     * Node.js Tools for Visual Studio
-    * Webstorm
-  * VSCode - light weight and cross-platform 
+      * Download the free tools
+      * Learn about the end-to-end experience of building a Node.js application in Visual Studio: https://channel9.msdn.com/Blogs/Seth-Juarez/Nodejs-Tools-for-Visual-Studi
+      * GitHub repo: https://github.com/Microsoft/nodejstools
+    * Alternatives: WebStorm
+  * Editors
+    * VSCode - light weight and cross-platform
 
 ## Compiling native addon modules
 There are three primary reasons you might be interested in this section: 
@@ -44,6 +48,8 @@ There are three primary reasons you might be interested in this section:
 
 ## Working with .NET
 * using Edge.js
+
+## TypeScript and Node.js tips
 
 ## Common issues
 * MAX_PATH
@@ -73,7 +79,16 @@ There are three primary reasons you might be interested in this section:
 ## Open-source Node.js projects
 https://github.com/Microsoft?utf8=%E2%9C%93&query=nodeb
 
-## Teams at MSFT using Node.js
+## Teams at Microsoft supporting Node.js
+**This list is incomplete**
+* Node.js Tools for Visual Studio: @mousetraps, arunesh
+* VSCode: chrisdias
+* Azure
+* App Insights
+* Node core contributors: 
+
+## Teams at Microsoft using Node.js
+**TODO**
 
 ## Contribution guidelines
 
