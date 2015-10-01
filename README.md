@@ -2,7 +2,7 @@
 Microsoft :heart: Node.js, and we want to make sure your experience is as seamless as possible.
 
 In particular, our goals here are to:
-* make it easier for people using Microsoft platforms and technologies to get started on the right foot
+* make it easier for people using Microsoft platforms and technologies to get started on the right foot with Node.js
 * consolidate our Node.js offerings in a centralized place so it's easier to build compelling end-to-end stories.
 * provide a forum to connect with various teams at Microsoft working to improve the Node.js experience
 * communicate status on key issues we're helping to address
