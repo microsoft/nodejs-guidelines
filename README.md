@@ -25,6 +25,8 @@ Let's start with the basics.
 > :bulb: your environment variables are set a the time that the command prompt was opened, so ensure you've opened a new command prompt since step 1 if you get any errors about Node not being found.
 
 ## Customizing your Windows development environment
+> :triangular_flag_on_post: TODO provide more dev environment options and a powershell script to make things easier.
+
 One of the painpoints we hear from users is that the command line console in Windows could use some work. We hear ya, and we're [working on it.](https://wpdev.uservoice.com/forums/266908) In the meantime, we want to ensure you have the best experience possible. So here's some links to some recommended tools to complement your existing experience.
 
 * **Chocolatey:** Chocolatey is the apt-get of Windows. There are also some other alternatives like Ninite which have their own advantages, but Chocolatey is the most commonly used. 
