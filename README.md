@@ -73,14 +73,10 @@ There are three primary reasons you might be interested in this section:
 * Node.js addon documentation: https://nodejs.org/api/addons.html
 * NodeSchool tutorial https://github.com/workshopper/goingnative
 
-## Databases
-* setting up MongoDB
-
-## Working with .NET
-* using Edge.js
-
-## TypeScript and Node.js tips
-
+## So... how about them MAX_PATH issues?
+For the uninitiated, MAX_PATH is a limitation with many windows tools and APIs that sets the maximum path character length to 260 characters. There are some workarounds involving UNC paths, but unfortunately not all APIs support it, and that's not the default. 
+> In the Windows API (with some exceptions discussed in the following paragraphs), the maximum length for a path is MAX_PATH, which is defined as 260 characters.
+> http://msdn.microsoft.com/en-us/library/windows/desktop/aa365247(v=vs.85).aspx
 ## Common issues
 * MAX_PATH
   * description 
@@ -108,6 +104,14 @@ There are three primary reasons you might be interested in this section:
 
 ## Open-source Node.js projects
 https://github.com/Microsoft?utf8=%E2%9C%93&query=nodeb
+
+
+## Application specific tips and tricks
+* setting up MongoDB
+* setting up SQL
+* .NET in-process using Edge.js
+
+### TypeScript and Node.js tips
 
 ## Teams at Microsoft supporting Node.js
 **This list is incomplete**
