@@ -26,10 +26,6 @@ Let's start with the basics.
 
 ## Customizing your Windows development environment
 ### Command line console
-> :triangular_flag_on_post: **TODO** provide more dev environment options and a powershell script to make things easier.
-
-> :chart_with_upwards_trend: **IN PROGRESS** we're currently planning the next Windows release, so it's a great time to let us know you biggest command line painpoints! 
-
 One of the painpoints we hear from users is that the command line console in Windows could use some work. We hear ya, and we're [working on it.](https://wpdev.uservoice.com/forums/266908) In the meantime, we want to ensure you have the best experience possible. So here's some links to some recommended tools to complement your existing experience.
 
 * **Chocolatey:** Chocolatey is the apt-get of Windows. There are also some other alternatives like Ninite which have their own advantages, but Chocolatey is the most commonly used. 
@@ -43,6 +39,10 @@ One of the painpoints we hear from users is that the command line console in Win
 * nvm-windows: https://github.com/coreybutler/nvm-windows - there are new versions of Node.js coming out all the time, so it can be annoying to migrate between versions. nmv-windows makes this way easier to switch between various versions, so we 
 * Fiddler: a web debugging proxy for Node.js
 * Upgrading npm to the latest version: https://www.npmjs.com/package/npm-windows-upgrade
+
+> :triangular_flag_on_post: **TODO** provide more dev environment options and a powershell script to make things easier.
+
+> :chart_with_upwards_trend: **IN PROGRESS** we're currently planning the next Windows release, so it's a great time to let us know you biggest command line painpoints! 
 
 ### Editors and IDEs
   * End-to-End tooling
