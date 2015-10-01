@@ -65,6 +65,10 @@ There are three primary reasons you might be interested in this section:
 * Download Visual Studio 2015 Community
   * during install, be sure to check the the C++ option
 
+> :chart_with_upwards_trend: **IN PROGRESS** there are currently two efforts underway to make it easier to install native modules.
+  * We recognize that installing full VS can be burdensome, so we're investigating ways to provide a bundle with just the required compiler dependencies on Windows.
+  * There are long-term efforts underway to build and cache pre-compiled packages on a server to get rid of compiler dependencies altogether.
+
 ### C++ and Node.js? Tell me more...
 * Node.js addon documentation: https://nodejs.org/api/addons.html
 * NodeSchool tutorial https://github.com/workshopper/goingnative
