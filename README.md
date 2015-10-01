@@ -21,10 +21,8 @@ Let's start with the basics.
   console.log('Hello, world!')
   ```
  
-4. In the commmand prompt, run `node app.js`
-  * 
-
-Now, your app should be running  
+3. In the commmand prompt, run `node app.js`
+> :bulb: your environment variables are set a the time that the command prompt was opened, so ensure you've opened a new command prompt since step 1 if you get any errors about Node not being found.
 
 ## Customizing your Windows development environment
 One of the painpoints we hear from users is that the command line console in Windows could use some work. We hear ya, and we're [working on it.](https://wpdev.uservoice.com/forums/266908) In the meantime, we want to ensure you have the best experience possible. So here's some links to some recommended tools to complement your existing experience.
