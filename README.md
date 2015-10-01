@@ -84,7 +84,7 @@ There are three primary reasons you might be interested in this section:
   * progress
   * 
   
-## Writing portable code
+## Dealing with platform-specific issues and writing portable code
 * check for common node.js errors
 * https://gist.github.com/domenic/2790533
 
