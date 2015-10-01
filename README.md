@@ -7,20 +7,24 @@ In particular, our goals here are to:
 * provide a forum to connect with various teams at Microsoft working to improve the Node.js experience
 * communicate status on key issues we're helping to address
 
-Note that this is not intended to be a comprehensive set of recommendations. Rather it's the beginning of what we expect to be an ongoing conversation on how we can improve the Node.js experience on Microsoft platforms.
+Note that this is not intended to be a comprehensive set of recommendations, nor is it meant to be a tutorial. Rather it's meant to be a helpful set of content that makes it easier to avoid any potential gotchas, and the beginning of what we expect to be an ongoing conversation on how we can improve the Node.js experience on Microsoft platforms.
 
 ## "Hello, World"
 Let's start with the basics. 
 
 1. Install Node.js: https://nodejs.org
-  * after you install Node.js, you'll want to ensure your `PATH` variable is set properly so that you can access 
+> :bulb: after you install Node.js, you'll want to ensure your `PATH` variable is set properly so that you can access 
+
 2. create a new file:
   ```js
   // app.js
   console.log('Hello, world!')
   ```
+ 
+4. In the commmand prompt, run `node app.js`
+  * 
 
-3. In the commmand prompt, run `node app.js`
+Now, your app should be running  
 
 ## Customizing your Windows development environment
 One of the painpoints we hear from users is that the command line console in Windows could use some work. We hear ya, and we're [working on it.](https://wpdev.uservoice.com/forums/266908) In the meantime, we want to ensure you have the best experience possible. So here's some links to some recommended tools to complement your existing experience.
