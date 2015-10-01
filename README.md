@@ -8,10 +8,18 @@
   * Powershell
   * Cygwin
 * Editors and IDEs
+  * End-to-End tooling
+    * Node.js Tools for Visual Studio
+    * Webstorm
+  * VSCode - light weight and cross-platform 
 * nvm-windows
 
 ## Databases
 * setting up MongoDB
+
+
+## Working with .NET
+* using Edge.js
 
 ## Common issues
 * MAX_PATH
