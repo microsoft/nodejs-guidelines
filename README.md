@@ -1,9 +1,19 @@
 # node-windows-tips
-## Setting up a development environment
+Microsoft :heart: Node.js, and we want to make sure your experience is as seamless as possible.
+
+In particular, our goals here are to:
+* make it easier for people building on Microsoft platforms to get started on the right foot
+* consolidate our Node.js offerings in a centralized place so it's easier to build compelling end-to-end stories.
+* provide a forum to connect with various teams at Microsoft working to improve the Node.js experience
+* communicate status on key issues we're helping to address
+
+Note that this is not intended to be a comprehensive set of recommendations. Rather it's the beginning of what we expect to be an ongoing conversation on how we can improve the Node.js experience on Microsoft platforms.
+
+## "Hello, World"
 ### Getting to "Hello, World"
 * Install Node.js: https://nodejs.org/en/
 
-### Customizing your environment
+## Customizing your Windows development environment
 One of the painpoints we hear from users is that the command line console in Windows could use some work. We hear ya, and we're [working on it.](https://wpdev.uservoice.com/forums/266908) In the meantime, we want to ensure you have the best experience possible. So here's some links to some recommended tools to complement your existing experience.
 
 * **Chocolatey:** Chocolatey is the apt-get of Windows. There are also some other alternatives like Ninite which have their own advantages, but Chocolatey is the most commonly used. 
@@ -91,10 +101,3 @@ https://github.com/Microsoft?utf8=%E2%9C%93&query=nodeb
 **TODO**
 
 ## Contribution guidelines
-
-## Why does this exist?
-This exists because a bunch of people at Microsoft are really excited about Node.js and want to make sure your experience is as awesome as it can possibly be. In particular, our goals here are to:
-* make it easier for people building on Microsoft platforms to get started on the right foot
-* promote our Node.js offerings in a centralized place so it's easier to iron out compelling end-to-end stories.
-* provide a forum to connect with various teams at Microsoft working to improve the Node.js experience
-* communicate status on key issues we're helping to address
