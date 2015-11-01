@@ -1,4 +1,4 @@
-# node-windows-tips
+# Microsoft + Node.js Guidelines
 Microsoft :heart: Node.js, and we want to make sure your experience is as seamless as possible.
 
 In particular, our goals here are to:
@@ -17,12 +17,34 @@ Let's start with the basics.
 
 2. create a new file:
   ```js
-  // app.js
+  /* app.js */
   console.log('Hello, world!')
   ```
  
 3. In the commmand prompt, run `node app.js`
 > :bulb: your environment variables are set a the time that the command prompt was opened, so ensure you've opened a new command prompt since step 1 if you get any errors about Node not being found.
+
+4. Moving beyond from simple console applications...
+  ```js
+  /* app.js */
+  
+  // Load the built-in 'http' module
+  var http = require('http');
+
+  // Create an http.Server object, and provide a callback that fires after 'request' events
+  var server = http.createServer(function (request, response) {
+     // Respond to the http request with "Hello World" and a basic header
+     response.writeHead(200, {'Content-Type': 'text/plain'});
+     response.end('Hello World\n');
+  });
+
+  // Try retrieving a port from an environment variable, otherwise fallback to 8080.
+  var port = process.env.PORT || 8080;
+  
+  // Start listening on the specified port and print out a url to visit.
+  server.listen(port);
+  console.log('Listening on http://localhost:' + port);
+  ```
 
 ## Customizing your Windows development environment
 ### Command line console
@@ -45,6 +67,7 @@ One of the painpoints we hear from users is that the command line console in Win
 > :chart_with_upwards_trend: **IN PROGRESS** we're currently planning the next Windows release, so it's a great time to let us know you biggest command line painpoints! 
 
 ### Editors and IDEs
+* Node.js Tools for Visual Studio
   * End-to-End tooling
     * Node.js Tools for Visual Studio
       * Download the free tools
@@ -66,8 +89,8 @@ There are three primary reasons you might be interested in this section:
   * during install, be sure to check the the C++ option
 
 > :chart_with_upwards_trend: **IN PROGRESS** there are currently two efforts underway to make it easier to install native modules.
-  * We recognize that installing full VS can be burdensome, so we're investigating ways to provide a bundle with just the required compiler dependencies on Windows.
-  * There are long-term efforts underway to build and cache pre-compiled packages on a server to get rid of compiler dependencies altogether.
+  * We recognize that installing full VS can be burdensome, so we're investigating ways to provide a bundle with just the required compiler dependencies on Windows. Watch [this thread](https://github.com/nodejs/node-gyp/issues/629) for updates.
+  * There are [long-term](https://github.com/nodejs/build/issues/151) efforts underway to build and cache pre-compiled packages on a server to get rid of compiler dependencies altogether.
 
 ### C++ and Node.js? Tell me more...
 * Node.js addon documentation: https://nodejs.org/api/addons.html
