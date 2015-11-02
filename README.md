@@ -222,6 +222,14 @@ https://github.com/Microsoft?utf8=%E2%9C%93&query=nodeb
 * App Insights
 * Node core contributors: 
 
+## Node.js packages and SDKs from Microsoft
+
+* [**TypeScript**](https://www.npmjs.com/package/typescript): TypeScript is a language for application scale JavaScript development.
+  * Also useful for working with typescript is [tsd](https://www.npmjs.com/package/tsd), which enables you to quickly download TypeScript definition files.
+* [**Azure SDK for Node.js**](https://github.com/Azure/azure-sdk-for-node#readme): We provide both [fine-grained modules](https://www.npmjs.com/~windowsazure) for different Microsoft Azure services which you can install separately, and an [all-up module](https://www.npmjs.com/package/azure) which contains everything. 
+* [**VS Online**](https://www.npmjs.com/~vsonline)
+* [**Other**](https://www.npmjs.com/~microsoft)
+
 ## Teams at Microsoft using Node.js
 **TODO**
 
