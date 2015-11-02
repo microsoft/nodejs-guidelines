@@ -97,16 +97,29 @@ Once you start installing npm packages, you'll need a way to keep track of all o
   ```
   
 2. Npm will prompt you to fill in any details about your package.
-3. In the package.json file, add a "dependencies" section, and within it, specify 
+3. In the package.json file, add a "dependencies" section, and within it, and an entry for `"express" : "*"`, which equates to saying "grab the latest version of `express`. To add this entry automatically when you install a package, you can add a `--save` flag: `npm install express --save`
+4. Now that your packages are listed in package.json, npm will always know which dependencies are required for your app. If you ever need to restore your packages, you can run `npm install` from your package directory.
+
+> :bulb: When you distribute your application, we recommend adding the `node_modules` folder to `.gitignore` so that you don't clutter your repo with needless files. This also makes it easier to work with multiple platforms when it comes to native module use. If you want to keep things as similar as possible between machines, npm offers many options that enable you to fix the version numbers in `package.json`, and even more fine-grained control with `npm-shrinkwrap.json`. There are some exceptions to this. For instance, when deploying a native module to production, oftentimes it is not possible to set up the production machine with all the required prerequisites to build the native addon. Therefore, building locally and deploying `node_modules` may be the best option assuming there aren't any platform differences between the development and deployment machines.
 
 ### Publishing npm packages to the registry
 Once you've created a package, publishing it to the world is only one command away!
+
 `C:\src\my-express0app> npm publish`
+
+> :bulb: Use npm's private modules 
 
 ### Local vs. Global packages
 There are two types of npm packages - locally installed packages and globally installed packages. It's not an exact science, but in general...
 * Locally installed packages are packages that are specific to your application
-* Globally installed packages tend to be cli tools and the like
+* Globally installed packages tend to be CLI tools and the like
+
+We went through locally installed packages above, and installing packages globally is very similar. The only difference is the `-g` command.
+
+1. `npm install http-server -g` will install the module globally
+  > :bulb: The module will be installed to the path specified when you run `npm bin -g`
+2. `http-server .` to start a basic fileserver from any directory
+  > :bulb: If this doesn't work, make sure that the global `node_modules` directory has been added to your `PATH`
 
 ## Customizing your Windows development environment
 ### Command line console
