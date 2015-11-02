@@ -84,15 +84,27 @@ To get a sense for how to use npm packages in your app, let's try getting starte
 
 3. Start the app by running `node app.js` in the command line.
 
-### Creating and publishing your own npm package
+Tada! There are many many more packages available at your disposal (200K and counting!). Head on over to https://www.npmjs.com/ to start exploring the ecosystem.
 
+### Managing your npm dependencies
+Once you start installing npm packages, you'll need a way to keep track of all of your dependencies. In Node.js, you do this through a package.json file. 
+
+1. To create a package.json file, run the `npm init` in your app directory. 
+  ```
+  C:\src\my-express-app> npm init
+  ```
+  
+2. Npm will prompt you to fill in any details about your package.
+3. In the package.json file, add a "dependencies" section, and within it, specify 
+
+### Publishing npm packages to the registry
+Once you've created a package, publishing it to the world is only one command away!
+`C:\src\my-express0app> npm publish`
 
 ### Local vs. Global packages
 There are two types of npm packages - locally installed packages and globally installed packages. It's not an exact science, but in general...
 * Locally installed packages are packages that are specific to your application
 * Globally installed packages tend to be cli tools and the like
-
-
 
 ## Customizing your Windows development environment
 ### Command line console
