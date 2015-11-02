@@ -229,6 +229,7 @@ https://github.com/Microsoft?utf8=%E2%9C%93&query=nodeb
 * [**Node-Chakra and Windows IoT**](https://github.com/Microsoft/node#readme): This project enables Node.js to optionally use the Chakra JavaScript engine on Windows 10, allowing Node.js to run on Windows 10 IoT.
   * Team contacts: @AruneshC, @jianchun
 * [**VS Online**](https://www.npmjs.com/~vsonline)
+* [**Docker Tools, `yo docker`**](https://github.com/Microsoft/DockerToolsDocs#yo-docker)
 * [**Node.js Contributors**](https://github.com/nodejs/node#current-project-team-members):
   * @orangemocha: Technical Steering Committee
 * [**Other**](https://www.npmjs.com/~microsoft)
