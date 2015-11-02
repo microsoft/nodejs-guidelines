@@ -15,7 +15,7 @@ Let's start with the basics.
 1. Install Node.js: https://nodejs.org
 > :bulb: when you install Node.js, you'll want to ensure your `PATH` variable is set to your install path so you can call Node from anywhere.
 
-2. create a new file:
+2. create a new directory named `hello-world`, add a new `app.js` file:
   ```js
   /* app.js */
   console.log('Hello, world!')
@@ -45,6 +45,54 @@ Let's start with the basics.
   server.listen(port);
   console.log('Listening on http://localhost:' + port);
   ```
+
+5. In the commmand prompt, run `node app.js`, and visit the url that's printed out to the console.
+
+## Working with npm packages
+As shown above, it's pretty impressive what you can do with so few lines of code in Node.js. But part of Node.js's philosophy is that the core should remain as small as possible... providing just enough built-in filesystem / networking modules, and the like to empower people to build powerful and scalable applications. But you also don't want to keep re-inventing the wheel every time you want to do something simple. 
+
+Introducing, npm! npm doesn't stand for "Node package manager", but it *is* Node.js's package manager. Npm ships with Node.js, so there's no need to install anything new. 
+
+### Using an existing npm package
+To get a sense for how to use npm packages in your app, let's try getting started with Express, which is the most popular Node.js webframework.
+
+1. Create a new directory entitled `my-express-app`, then install `express` from within that directory. When express is installed, you'll new entries for `express` and it's dependencies appear under a `node_modules` folder.
+  ```
+  C:\src> mkdir my-express-app
+  C:\src> cd my-express-app
+  C:\src\my-express-app> npm install express
+  ```
+  
+  > :bulb: We recommend starting with a short path like C:\src to work around any potential MAX_PATH issues
+
+2. Now, create a new file, `app.js` as we did above past. This code will load the express module we just installed, and use it to start a lightweight server.
+  ```js
+  /* app.js */
+  
+  var express = require('express');
+  var app = express();
+ 
+  app.get('/', function (req, res) {
+    res.send('Hello World');
+  })
+ 
+  var port = process.env.PORT || 3000;
+ 
+  app.listen(port);
+  console.log('Listening on http://localhost:' + port);
+  ```
+
+3. Start the app by running `node app.js` in the command line.
+
+### Creating and publishing your own npm package
+
+
+### Local vs. Global packages
+There are two types of npm packages - locally installed packages and globally installed packages. It's not an exact science, but in general...
+* Locally installed packages are packages that are specific to your application
+* Globally installed packages tend to be cli tools and the like
+
+
 
 ## Customizing your Windows development environment
 ### Command line console
