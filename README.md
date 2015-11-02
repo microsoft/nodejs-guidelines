@@ -86,6 +86,8 @@ To get a sense for how to use npm packages in your app, let's try getting starte
 
 Tada! There are many many more packages available at your disposal (200K and counting!). Head on over to https://www.npmjs.com/ to start exploring the ecosystem.
 
+> :bulb: Most of the packages available via npm tend to be pure javascript, but not all of them. For instance, there's a small percentage of native module addons available via npm that provide Node.js bindings, but ultimately call into native  C++ code. This includes packages with `node-gyp`, `node-pre-gyp`, and `nan` dependencies. In order to install and run these packages, some additional machine configuration is required (described below.)
+
 ### Managing your npm dependencies
 Once you start installing npm packages, you'll need a way to keep track of all of your dependencies. In Node.js, you do this through a package.json file. 
 
