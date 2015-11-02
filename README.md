@@ -214,24 +214,26 @@ https://github.com/Microsoft?utf8=%E2%9C%93&query=nodeb
 
 ### TypeScript and Node.js tips
 
-## Teams at Microsoft supporting Node.js
-**This list is incomplete**
-* Node.js Tools for Visual Studio: @mousetraps, arunesh
-* VSCode: chrisdias
-* Azure
-* App Insights
-* Node core contributors: 
-
-## Node.js packages and SDKs from Microsoft
-
+## Node.js products, services, and contributions from Microsoft
+* [**Node.js Tools for Visual Studio**](https://www.visualstudio.com/features/node-js-vs): Free, open-source extension that turns Visual Studio into a powerful Node.js development environment.
+  * Team contacts: @mousetraps, @AruneshC
+* [**Visual Studio Code**](https://code.visualstudio.com/): lightweight cross-platform editor for building and debugging modern web and cloud applications.
+  * Team contacts: @chrisdias
 * [**TypeScript**](https://www.npmjs.com/package/typescript): TypeScript is a language for application scale JavaScript development.
   * Also useful for working with typescript is [tsd](https://www.npmjs.com/package/tsd), which enables you to quickly download TypeScript definition files.
-* [**Azure SDK for Node.js**](https://github.com/Azure/azure-sdk-for-node#readme): We provide both [fine-grained modules](https://www.npmjs.com/~windowsazure) for different Microsoft Azure services which you can install separately, and an [all-up module](https://www.npmjs.com/package/azure) which contains everything. 
+  * Team contacts: @billti
+* [**Azure SDK for Node.js**](https://github.com/Azure/azure-sdk-for-node#readme): We provide both [fine-grained modules](https://www.npmjs.com/~windowsazure) for different Microsoft Azure services which you can install separately, and an [all-up module](https://www.npmjs.com/package/azure) which contains everything.
+  * Team contacts: @dariagrigoriu, @christopheranderson
+* [**Application Insights**](https://www.npmjs.com/~msftapplicationinsights): monitor your application's performance and usage with just a few lines of code.
+  * Team contacts: @BogdanBe
+* [**Node-Chakra and Windows IoT**](https://github.com/Microsoft/node#readme): This project enables Node.js to optionally use the Chakra JavaScript engine on Windows 10, allowing Node.js to run on Windows 10 IoT.
+  * Team contacts: @AruneshC, @jianchun
 * [**VS Online**](https://www.npmjs.com/~vsonline)
+* [**Node.js Contributors**](https://github.com/nodejs/node#current-project-team-members):
+  * @orangemocha: Technical Steering Committee
 * [**Other**](https://www.npmjs.com/~microsoft)
 
-## Teams at Microsoft using Node.js
-**TODO**
+> :triangular_flag_on_post: **TODO** Find team contact for VSOnline and any other teams.
 
 ## Contribution guidelines
 ### Pull requests
