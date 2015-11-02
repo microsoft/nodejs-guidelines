@@ -9,6 +9,23 @@ In particular, our goals here are to:
 
 Note that this is not intended to be a comprehensive set of recommendations, nor is it meant to be a tutorial. Rather it's meant to be a helpful set of content that makes it easier to avoid any potential gotchas, and the beginning of what we expect to be an ongoing conversation on how we can improve the Node.js experience on Microsoft platforms.
 
+## Table of Contents
+* Hello, World
+* Working with npm packages 
+  * Using an existing npm package
+  * Managing npm dependencies
+  * Publishing npm packages to the registry
+  * Local vs. Global packages
+* Customizing your Windows development environment
+  * Command-line console recommendations and other tools
+  * Editors and IDEs
+  * MAX_PATH explanation and workarounds
+  * Compiling native addon modules
+* Dealing with platform-specific issues and writing portable code
+* Node.js products, services, and contributions from Microsoft
+* Contribution guidelines to this repo
+  
+
 ## "Hello, World"
 Let's start with the basics. 
 
@@ -202,10 +219,6 @@ For the uninitiated, MAX_PATH is a limitation with many windows tools and APIs t
 * Docker and containers
 * Cross-platform remote debugging
 * iisnode
-
-## Open-source Node.js projects
-https://github.com/Microsoft?utf8=%E2%9C%93&query=nodeb
-
 
 ## Application specific tips and tricks
 * setting up MongoDB
