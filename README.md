@@ -152,20 +152,18 @@ Once you've created a package, publishing it to the world is only one command aw
 
 > :triangular_flag_on_post: **TODO** Add description about how to authorize the machine using `npm adduser`.
 
-### Local vs. Global packages
+### Local vs. global packages
 There are two types of npm packages - locally installed packages and globally installed packages. It's not an exact science, but in general...
 * Locally installed packages are packages that are specific to your application
 * Globally installed packages tend to be CLI tools and the like
 
 We went through locally installed packages above, and installing packages globally is very similar. The only difference is the `-g` command.
 
-1. `npm install http-server -g` will install the module globally
+1. `npm install http-server -g` will install the module globally.
 
-  > :bulb: The module will be installed to the path specified when you run `npm bin -g`
+  > :bulb: The module will be installed to the path indicated by `npm bin -g`.
   
-2. `http-server .` to start a basic fileserver from any directory
-
-  > :bulb: If this doesn't work, make sure that the global `node_modules` directory has been added to your `PATH`
+2. `http-server .` to start a basic fileserver from any directory.
 
 ## Customizing your Windows development environment
 ### Command line console recommendations and other useful tools
