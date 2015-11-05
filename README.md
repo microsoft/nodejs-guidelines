@@ -9,6 +9,8 @@ In particular, our goals here are to:
 * communicate status on key issues we're addressing and collecting feedback from the Node.js community
 * provide a forum to connect various teams at Microsoft working on improving the Node.js experience.
 
+Pull requests are welcome!
+
 Note that this is not intended to be a comprehensive set of recommendations. Rather it's meant to be a helpful set of content that makes it easier to avoid any potential gotchas, and the beginning of what we expect to be an ongoing conversation on how we can improve the Node.js experience on Microsoft platforms.
 
 ## Contribution guidelines
@@ -20,11 +22,11 @@ It's also good to make a pull reqeust for any change to the README (minor spelli
 
 ### Emoji legend
 
-> :bulb: this is a tip that provides the reader with some additional info that's not necessary, but potentially useful for the task at hand.
+> :bulb: This is a tip that provides the reader with some additional info that's not necessary, but potentially useful for the task at hand.
 
-> :triangular_flag_on_post: **TODO** this describes a todo item that we'd like some help with.
+> :triangular_flag_on_post: **TODO** This describes a todo item that we'd like some help with.
 
-> :chart_with_upwards_trend: **IN PROGRESS** this provides awareness about an important issue that we're currently working on resolving.
+> :chart_with_upwards_trend: **IN PROGRESS** This provides awareness about an important issue that we're currently working on resolving.
 
 
 ## Table of contents
@@ -48,7 +50,7 @@ It's also good to make a pull reqeust for any change to the README (minor spelli
 Let's start with the basics. 
 
 1. Install Node.js: https://nodejs.org.
-> :bulb: when you install Node.js, you'll want to ensure your `PATH` variable is set to your install path so you can call Node from anywhere.
+> :bulb: When you install Node.js, you'll want to ensure your `PATH` variable is set to your install path so you can call Node from anywhere.
 
 2. Create a new directory named `hello-world`, add a new `app.js` file:
   ```js
@@ -144,9 +146,11 @@ Once you start installing npm packages, you'll need a way to keep track of all o
 ### Publishing npm packages to the registry
 Once you've created a package, publishing it to the world is only one command away!
 
-`C:\src\my-express0app> npm publish`
+`C:\src\my-express-app> npm publish`
 
-> :bulb: Use npm's private modules 
+> :bulb: Use npm's private modules.
+
+> :triangular_flag_on_post: **TODO** Add description about how to authorize the machine using `npm adduser`.
 
 ### Local vs. Global packages
 There are two types of npm packages - locally installed packages and globally installed packages. It's not an exact science, but in general...
