@@ -195,12 +195,11 @@ There are three primary reasons you might be interested in this section:
 * you are interested in optimizing the performance of some code by writing it in C++
 * you're running into dreaded `node-gyp` issues and have no idea what's going on.
 
-> :triangular_flag_on_post: **TODO** Complete this section.
-
 ### Just tell me how to set up my environment!
 * Download Python 2.7 (3.x will not work)
 * Download Visual Studio 2015 Community
-  * during install, be sure to check the the C++ option
+
+ > :bulb: During install, be sure to check the the C++ option.
 
 > :chart_with_upwards_trend: **IN PROGRESS** there are currently two efforts underway to make it easier to install native modules.
   * We recognize that installing full VS can be burdensome, so we're investigating ways to provide a bundle with just the required compiler dependencies on Windows. Watch [this thread](https://github.com/nodejs/node-gyp/issues/629) for updates.
@@ -210,7 +209,7 @@ There are three primary reasons you might be interested in this section:
 * Node.js addon documentation: https://nodejs.org/api/addons.html
 * NodeSchool tutorial https://github.com/workshopper/goingnative
 
-## So... how about them MAX_PATH issues?
+## So... how about the MAX_PATH issue?
 For the uninitiated, MAX_PATH is a limitation with many windows tools and APIs that sets the maximum path character length to 260 characters. There are some workarounds involving UNC paths, but unfortunately not all APIs support it, and that's not the default. 
 > In the Windows API (with some exceptions discussed in the following paragraphs), the maximum length for a path is MAX_PATH, which is defined as 260 characters.
 > http://msdn.microsoft.com/en-us/library/windows/desktop/aa365247(v=vs.85).aspx
@@ -224,46 +223,38 @@ For the uninitiated, MAX_PATH is a limitation with many windows tools and APIs t
   * description
   * setup
   * progress
-  * 
   
 ## Dealing with platform-specific issues and writing portable code
-* check for common node.js errors
+* Check for common node.js errors.
 * https://gist.github.com/domenic/2790533
 
 ## IoT development
 * Node-Chakra
 
 ## Deployment
-* Continuous integration with VSO
-* Docker and containers
-* Cross-platform remote debugging
+* Continuous integration with VSO.
+* Docker and containers.
+* Cross-platform remote debugging.
 * iisnode
 
 ## Application specific tips and tricks
-* setting up MongoDB
-* setting up SQL
-* .NET in-process using Edge.js
+* Setting up MongoDB.
+* Setting up SQL.
+* .NET in-process using Edge.js.
 
 ### TypeScript and Node.js tips
 
-## Node.js products, services, and contributions from Microsoft
-* [**Node.js Tools for Visual Studio**](https://www.visualstudio.com/features/node-js-vs): Free, open-source extension that turns Visual Studio into a powerful Node.js development environment.
-  * Team contacts: @mousetraps, @AruneshC
+## Microsoft contributions to Node.js
 * [**Visual Studio Code**](https://code.visualstudio.com/): lightweight cross-platform editor for building and debugging modern web and cloud applications.
-  * Team contacts: @chrisdias
+* [**Node.js Tools for Visual Studio**](https://www.visualstudio.com/features/node-js-vs): Free, open-source extension that turns Visual Studio into a powerful Node.js development environment.
 * [**TypeScript**](https://www.npmjs.com/package/typescript): TypeScript is a language for application scale JavaScript development.
   * Also useful for working with typescript is [tsd](https://www.npmjs.com/package/tsd), which enables you to quickly download TypeScript definition files.
-  * Team contacts: @billti
 * [**Azure SDK for Node.js**](https://github.com/Azure/azure-sdk-for-node#readme): We provide both [fine-grained modules](https://www.npmjs.com/~windowsazure) for different Microsoft Azure services which you can install separately, and an [all-up module](https://www.npmjs.com/package/azure) which contains everything.
-  * Team contacts: @dariagrigoriu, @christopheranderson
 * [**Application Insights**](https://www.npmjs.com/~msftapplicationinsights): monitor your application's performance and usage with just a few lines of code.
-  * Team contacts: @BogdanBe
 * [**Node-Chakra and Windows IoT**](https://github.com/Microsoft/node#readme): This project enables Node.js to optionally use the Chakra JavaScript engine on Windows 10, allowing Node.js to run on Windows 10 IoT.
-  * Team contacts: @AruneshC, @jianchun
 * [**VS Online**](https://www.npmjs.com/~vsonline)
 * [**Docker Tools, `yo docker`**](https://github.com/Microsoft/DockerToolsDocs#yo-docker)
 * [**Node.js Contributors**](https://github.com/nodejs/node#current-project-team-members):
-  * @orangemocha: Technical Steering Committee
-* [**Other**](https://www.npmjs.com/~microsoft)
+* [**Others**](https://www.npmjs.com/~microsoft)
 
-> :triangular_flag_on_post: **TODO** Find team contact for VSOnline and any other teams.
+> :triangular_flag_on_post: **TODO** Add other Microsoft services related to Node.js.
