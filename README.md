@@ -166,7 +166,7 @@ We went through locally installed packages above, and installing packages global
 2. `http-server .` to start a basic fileserver from any directory.
 
 ## Customizing your Windows development environment
-### Command line console recommendations and other useful tools
+### Command line console and other useful tools
 One of the painpoints we hear from users is that the command line console in Windows could use some work. We hear ya, and we're [working on it](https://wpdev.uservoice.com/forums/266908). In the meantime, we want to enable you to have the best experience possible. So here are some links to recommended tools to complement your existing experience.
 * **cmd:** cmd has had some improvements in Windows 10, so be sure to check it out if you abandoned ship in the past :smiley:. When you're working with Node.js, chances are you'll be spending a bit more time in the console, so it's well worth brushing up on your [CLI commands](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything).
 * **PowerShell:** PowerShell is a powerful object-oriented shell (as opposed to a text-based shell). It's a bit of a learning curve, but well worth it. It also has a bunch of aliases for commands, like `ls`, that'll make bash-happy people feel more at home. Here's a [good walkthrough](https://developer.rackspace.com/blog/powershell-101-from-a-linux-guy/) of some PowerShell commands from a *nix perspective, and there are [many other resources](https://technet.microsoft.com/en-us/scriptcenter/dd742419.aspx) to help you get started.
@@ -185,15 +185,9 @@ One of the painpoints we hear from users is that the command line console in Win
 > :chart_with_upwards_trend: **IN PROGRESS** We're currently planning the next Windows release, so it's a great time to let us know your biggest command line painpoints! 
 
 ### Editors and IDEs
-* Node.js Tools for Visual Studio
-  * End-to-End tooling
-    * Node.js Tools for Visual Studio
-      * Download the free tools
-      * Learn about the end-to-end experience of building a Node.js application in Visual Studio: https://channel9.msdn.com/Blogs/Seth-Juarez/Nodejs-Tools-for-Visual-Studi
-      * GitHub repo: https://github.com/Microsoft/nodejstools
-    * Alternatives: WebStorm
-  * Editors
-    * VSCode - light weight and cross-platform
+* **Visual Studio Code:** [Code] (https://code.visualstudio.com/) is a light weight code editor with powerful editing and debugging features for Node.js. It is free and available on your favorite platform - Windwos, Mac, and Linux. Check it out!
+
+* **Node.js Tools for Visual Studio:** [NTVS](https://github.com/Microsoft/nodejstools) is a free Node.js extension for Visual Stuido. You can learn about the end-to-end experience of building a Node.js application in Visual Studio: https://channel9.msdn.com/Blogs/Seth-Juarez/Nodejs-Tools-for-Visual-Studi.
 
 ## Compiling native addon modules
 There are three primary reasons you might be interested in this section: 
