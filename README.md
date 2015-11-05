@@ -185,15 +185,17 @@ One of the painpoints we hear from users is that the command line console in Win
 > :chart_with_upwards_trend: **IN PROGRESS** We're currently planning the next Windows release, so it's a great time to let us know your biggest command line painpoints! 
 
 ### Editors and IDEs
-* **Visual Studio Code:** [Code] (https://code.visualstudio.com/) is a light weight code editor with powerful editing and debugging features for Node.js. It is free and available on your favorite platform - Windwos, Mac, and Linux. Check it out!
+* **Visual Studio Code:** [Code] (https://code.visualstudio.com/) is a light weight code editor. Yet, it offers powerful capabilies in [editing](https://code.visualstudio.com/Docs/editor/editingevolved),  [debugging](https://code.visualstudio.com/Docs/editor/debugging), and [git integration](https://code.visualstudio.com/Docs/editor/versioncontrol) for Node.js development. It is free and available on your favorite platform - Windows, Mac, and Linux. For more information, check out http://johnpapa.net/visual-studio-code.
 
-* **Node.js Tools for Visual Studio:** [NTVS](https://github.com/Microsoft/nodejstools) is a free Node.js extension for Visual Stuido. You can learn about the end-to-end experience of building a Node.js application in Visual Studio: https://channel9.msdn.com/Blogs/Seth-Juarez/Nodejs-Tools-for-Visual-Studi.
+* **Node.js Tools for Visual Studio:** [NTVS](https://github.com/Microsoft/nodejstools) is a free Node.js extension for Visual Stuido. You can learn about the end-to-end experience of building a Node.js application in Visual Studio: https://channel9.msdn.com/Blogs/Seth-Juarez/Nodejs-Tools-for-Visual-Studio.
 
 ## Compiling native addon modules
 There are three primary reasons you might be interested in this section: 
 * you have an existing C++ libary you'd like to take advantage of in your Node.js application
 * you are interested in optimizing the performance of some code by writing it in C++
-* You're running into dreaded node-gyp issues and have no idea what's going on
+* you're running into dreaded `node-gyp` issues and have no idea what's going on.
+
+> :triangular_flag_on_post: **TODO** Complete this section.
 
 ### Just tell me how to set up my environment!
 * Download Python 2.7 (3.x will not work)
