@@ -11,7 +11,7 @@ In particular, our goals here are to:
 
 Note that this is not intended to be a comprehensive set of recommendations. Rather it's meant to be a helpful set of content that makes it easier to avoid any potential gotchas, and the beginning of what we expect to be an ongoing conversation on how we can improve the Node.js experience on Microsoft platforms.
 
-## Contribution Guidelines
+## Contribution guidelines
 
 ### Updating content
 Please file an issue on any major changes you're planning - e.g. "Add new X section", and assign yourself to issues you intend to take on to prevent duplication of effort. 
@@ -27,8 +27,8 @@ It's also good to make a pull reqeust for any change to the README (minor spelli
 > :chart_with_upwards_trend: **IN PROGRESS** this provides awareness about an important issue that we're currently working on resolving.
 
 
-## Table of Contents
-* "Hello World"
+## Table of contents
+* Hello World
 * Working with npm packages 
   * Using an existing npm package
   * Managing npm dependencies
@@ -44,7 +44,7 @@ It's also good to make a pull reqeust for any change to the README (minor spelli
 * Contribution guidelines to this repo
   
 
-## "Hello World"
+## Hello World
 Let's start with the basics. 
 
 1. Install Node.js: https://nodejs.org.
@@ -53,7 +53,7 @@ Let's start with the basics.
 2. Create a new directory named `hello-world`, add a new `app.js` file:
   ```js
   /* app.js */
-  console.log('Hello world!')
+  console.log('Hello World!')
   ```
  
 3. In the commmand prompt, run `node app.js`.
@@ -70,7 +70,7 @@ Let's start with the basics.
   var server = http.createServer(function (request, response) {
      // Respond to the http request with "Hello World" and a basic header.
      response.writeHead(200, {'Content-Type': 'text/plain'});
-     response.end('Hello World\n');
+     response.end('Hello World!\n');
   });
 
   // Try retrieving a port from an environment variable, otherwise fallback to 8080.
@@ -84,23 +84,25 @@ Let's start with the basics.
 5. In the commmand prompt, run `node app.js`, and visit the url that's printed out to the console.
 
 ## Working with npm packages
-As shown above, it's pretty impressive what you can do with so few lines of code in Node.js. But part of Node.js's philosophy is that the core should remain as small as possible... providing just enough built-in filesystem / networking modules, and the like to empower people to build powerful and scalable applications. But you also don't want to keep re-inventing the wheel every time you want to do something simple. 
+As shown above, it's pretty impressive what you can do with so few lines of code in Node.js. Part of the philosophy of Node.js is that the core should remain as small as possible. It provides just enough built-in modules, such as filesystem and networking modules, to empower you to build scalable applications. However, you don't want to keep re-inventing the wheel every time for common tasks. 
 
-Introducing, npm! npm doesn't stand for "Node package manager", but it *is* Node.js's package manager. Npm ships with Node.js, so there's no need to install anything new. 
+Introducing, npm! 
+
+npm is the package manager for JavaScript. npm ships with Node.js, so there's no need to install it seperately. 
 
 ### Using an existing npm package
-To get a sense for how to use npm packages in your app, let's try getting started with Express, which is the most popular Node.js webframework.
+To get a sense for how to use npm packages in your app, let's try getting started with `express`, the most popular web framework for Node.js.
 
-1. Create a new directory entitled `my-express-app`, then install `express` from within that directory. When express is installed, you'll new entries for `express` and it's dependencies appear under a `node_modules` folder.
+1. Create a new directory entitled `my-express-app`, then install `express` from within that directory. When `express` is installed, the package and its dependencies appear under a `node_modules` folder.
   ```
   C:\src> mkdir my-express-app
   C:\src> cd my-express-app
   C:\src\my-express-app> npm install express
   ```
   
-  > :bulb: We recommend starting with a short path like C:\src to work around any potential MAX_PATH issues
+  > :bulb: We recommend starting with a short path like C:\src to work around any potential MAX_PATH issues.
 
-2. Now, create a new file, `app.js` as we did above past. This code will load the express module we just installed, and use it to start a lightweight server.
+2. Now, create a new file, `app.js`. This code will load the express module we just installed, and use it to start a lightweight web server.
   ```js
   /* app.js */
   
@@ -108,7 +110,7 @@ To get a sense for how to use npm packages in your app, let's try getting starte
   var app = express();
  
   app.get('/', function (req, res) {
-    res.send('Hello World');
+    res.send('Hello World!');
   })
  
   var port = process.env.PORT || 3000;
@@ -117,11 +119,11 @@ To get a sense for how to use npm packages in your app, let's try getting starte
   console.log('Listening on http://localhost:' + port);
   ```
 
-3. Start the app by running `node app.js` in the command line.
+3. Start the app by running `node app.js` in the command line. Tada! 
 
-Tada! There are many many more packages available at your disposal (200K and counting!). Head on over to https://www.npmjs.com/ to start exploring the ecosystem.
+There are many more packages available at your disposal (200K and counting!). Head on over to https://www.npmjs.com/ to start exploring the ecosystem.
 
-> :bulb: Most of the packages available via npm tend to be pure javascript, but not all of them. For instance, there's a small percentage of native module addons available via npm that provide Node.js bindings, but ultimately call into native  C++ code. This includes packages with `node-gyp`, `node-pre-gyp`, and `nan` dependencies. In order to install and run these packages, some additional machine configuration is required (described below.)
+> :bulb: Most of the packages available via npm tend to be pure javascript, but not all of them. For instance, there's a small percentage of native module addons available via npm that provide Node.js bindings, but ultimately call into native  C++ code. This includes packages with `node-gyp`, `node-pre-gyp`, and `nan` dependencies. In order to install and run these packages, some additional machine configuration is required (described below).
 
 ### Managing your npm dependencies
 Once you start installing npm packages, you'll need a way to keep track of all of your dependencies. In Node.js, you do this through a package.json file. 
