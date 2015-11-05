@@ -1,16 +1,17 @@
 # Microsoft + Node.js Guidelines
-Microsoft :heart: Node.js, and we want to make sure your experience is as seamless as possible.
+Microsoft :heart: Node.js!
+
+We work hard to contribute to the Node.js community and we want to make sure your experience is as seamless as possible. 
 
 In particular, our goals here are to:
-* make it easier for people using Microsoft platforms and technologies to get started on the right foot with Node.js
-* consolidate our Node.js offerings in a centralized place so it's easier to build compelling end-to-end stories.
-* provide a forum to connect with various teams at Microsoft working to improve the Node.js experience
-* communicate status on key issues we're helping to address
+* make it easier for people using Microsoft services and technologies to get started on the right foot with Node.js
+* consolidate Microsoft's Node.js offerings in a centralized place to make it easier for you to find information
+* communicate status on key issues we're addressing and collecting feedback from the Node.js community
+* provide a forum to connect various teams at Microsoft working on improving the Node.js experience.
 
-Note that this is not intended to be a comprehensive set of recommendations, nor is it meant to be a tutorial. Rather it's meant to be a helpful set of content that makes it easier to avoid any potential gotchas, and the beginning of what we expect to be an ongoing conversation on how we can improve the Node.js experience on Microsoft platforms.
+Note that this is not intended to be a comprehensive set of recommendations. Rather it's meant to be a helpful set of content that makes it easier to avoid any potential gotchas, and the beginning of what we expect to be an ongoing conversation on how we can improve the Node.js experience on Microsoft platforms.
 
-## Contribution guidelines
-We'll find a better spot for this before we go live, but it lives here for now so that it's easier for people to get started contributing.
+## Contribution Guidelines
 
 ### Updating content
 Please file an issue on any major changes you're planning - e.g. "Add new X section", and assign yourself to issues you intend to take on to prevent duplication of effort. 
@@ -21,7 +22,7 @@ It's also good to make a pull reqeust for any change to the README (minor spelli
 
 > :bulb: this is a tip that provides the reader with some additional info that's not necessary, but potentially useful for the task at hand.
 
-> :triangular_flag_on_post: **TODO** this describes a todo item that we'd like some help with
+> :triangular_flag_on_post: **TODO** this describes a todo item that we'd like some help with.
 
 > :chart_with_upwards_trend: **IN PROGRESS** this provides awareness about an important issue that we're currently working on resolving.
 
