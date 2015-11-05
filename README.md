@@ -83,6 +83,8 @@ Let's start with the basics.
 
 5. In the commmand prompt, run `node app.js`, and visit the url that's printed out to the console.
 
+6. To stop the application, run `Ctrl+C`.
+
 ## Working with npm packages
 As shown above, it's pretty impressive what you can do with so few lines of code in Node.js. Part of the philosophy of Node.js is that the core should remain as small as possible. It provides just enough built-in modules, such as filesystem and networking modules, to empower you to build scalable applications. However, you don't want to keep re-inventing the wheel every time for common tasks. 
 
@@ -121,20 +123,20 @@ To get a sense for how to use npm packages in your app, let's try getting starte
 
 3. Start the app by running `node app.js` in the command line. Tada! 
 
-There are many more packages available at your disposal (200K and counting!). Head on over to https://www.npmjs.com/ to start exploring the ecosystem.
+There are many more packages available at your disposal (200K and counting!). Head on over to https://www.npmjs.com to start exploring the ecosystem.
 
 > :bulb: Most of the packages available via npm tend to be pure javascript, but not all of them. For instance, there's a small percentage of native module addons available via npm that provide Node.js bindings, but ultimately call into native  C++ code. This includes packages with `node-gyp`, `node-pre-gyp`, and `nan` dependencies. In order to install and run these packages, some additional machine configuration is required (described below).
 
 ### Managing your npm dependencies
-Once you start installing npm packages, you'll need a way to keep track of all of your dependencies. In Node.js, you do this through a package.json file. 
+Once you start installing npm packages, you'll need a way to keep track of all of your dependencies. In Node.js, you do this through a `package.json` file. 
 
-1. To create a package.json file, run the `npm init` in your app directory. 
+1. To create a `package.json` file, run the `npm init` in your app directory. 
   ```
   C:\src\my-express-app> npm init
   ```
   
-2. Npm will prompt you to fill in any details about your package.
-3. In the package.json file, add a "dependencies" section, and within it, and an entry for `"express" : "*"`, which equates to saying "grab the latest version of `express`. To add this entry automatically when you install a package, you can add a `--save` flag: `npm install express --save`
+2. Npm will prompt you to fill in the details about your package.
+3. In the `package.json` file, there is a "dependencies" section, and within it, an entry for `"express"`. A value of `"*"` would mean that the latest version should be used. To add this entry automatically when you install a package, you can add a `--save` flag: `npm install express --save`.
 4. Now that your packages are listed in package.json, npm will always know which dependencies are required for your app. If you ever need to restore your packages, you can run `npm install` from your package directory.
 
 > :bulb: When you distribute your application, we recommend adding the `node_modules` folder to `.gitignore` so that you don't clutter your repo with needless files. This also makes it easier to work with multiple platforms when it comes to native module use. If you want to keep things as similar as possible between machines, npm offers many options that enable you to fix the version numbers in `package.json`, and even more fine-grained control with `npm-shrinkwrap.json`. There are some exceptions to this. For instance, when deploying a native module to production, oftentimes it is not possible to set up the production machine with all the required prerequisites to build the native addon. Therefore, building locally and deploying `node_modules` may be the best option assuming there aren't any platform differences between the development and deployment machines.
