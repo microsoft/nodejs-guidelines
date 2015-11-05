@@ -9,6 +9,23 @@ In particular, our goals here are to:
 
 Note that this is not intended to be a comprehensive set of recommendations, nor is it meant to be a tutorial. Rather it's meant to be a helpful set of content that makes it easier to avoid any potential gotchas, and the beginning of what we expect to be an ongoing conversation on how we can improve the Node.js experience on Microsoft platforms.
 
+## Contribution guidelines
+We'll find a better spot for this before we go live, but it lives here for now so that it's easier for people to get started contributing.
+
+### Updating content
+Please file an issue on any major changes you're planning - e.g. "Add new X section", and assign yourself to issues you intend to take on to prevent duplication of effort. 
+
+It's also good to make a pull reqeust for any change to the README (minor spelling and wording changes are fine to commit to master). This enables everyone to stay updated on what's going on in the repo. We'll be lax on this in the beginning as we work together to populate this with an initial set of content. 
+
+### Emoji legend
+
+> :bulb: this is a tip that provides the reader with some additional info that's not necessary, but potentially useful for the task at hand.
+
+> :triangular_flag_on_post: **TODO** this describes a todo item that we'd like some help with
+
+> :chart_with_upwards_trend: **IN PROGRESS** this provides awareness about an important issue that we're currently working on resolving.
+
+
 ## Table of Contents
 * Hello, World
 * Working with npm packages 
@@ -248,17 +265,3 @@ For the uninitiated, MAX_PATH is a limitation with many windows tools and APIs t
 * [**Other**](https://www.npmjs.com/~microsoft)
 
 > :triangular_flag_on_post: **TODO** Find team contact for VSOnline and any other teams.
-
-## Contribution guidelines
-### Updating content
-Please file an issue on any major changes you're planning - e.g. "Add new X section".
-
-It's also good to make a pull reqeust for any change to the README (minor spelling and wording changes are fine to commit to master). This enables everyone to stay updated on what's going on in the repo. We'll be lax on this in the beginning as we work together to populate this with an initial set of content. 
-
-### Emoji legend
-
-> :bulb: this is a tip that provides the reader with some additional info that's not necessary, but potentially useful for the task at hand.
-
-> :triangular_flag_on_post: **TODO** this describes a todo item that we'd like some help with
-
-> :chart_with_upwards_trend: **IN PROGRESS** this provides awareness about an important issue that we're currently working on resolving.
