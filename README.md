@@ -28,7 +28,7 @@ It's also good to make a pull reqeust for any change to the README (minor spelli
 
 
 ## Table of Contents
-* Hello, World
+* "Hello World"
 * Working with npm packages 
   * Using an existing npm package
   * Managing npm dependencies
@@ -44,31 +44,31 @@ It's also good to make a pull reqeust for any change to the README (minor spelli
 * Contribution guidelines to this repo
   
 
-## "Hello, World"
+## "Hello World"
 Let's start with the basics. 
 
-1. Install Node.js: https://nodejs.org
+1. Install Node.js: https://nodejs.org.
 > :bulb: when you install Node.js, you'll want to ensure your `PATH` variable is set to your install path so you can call Node from anywhere.
 
-2. create a new directory named `hello-world`, add a new `app.js` file:
+2. Create a new directory named `hello-world`, add a new `app.js` file:
   ```js
   /* app.js */
-  console.log('Hello, world!')
+  console.log('Hello world!')
   ```
  
-3. In the commmand prompt, run `node app.js`
-> :bulb: your environment variables are set a the time that the command prompt was opened, so ensure you've opened a new command prompt since step 1 if you get any errors about Node not being found.
+3. In the commmand prompt, run `node app.js`.
+> :bulb: Your environment variables are set at the time when the command prompt is opened, so ensure to open a new command prompt since step 1 if you get any errors about Node not being found.
 
 4. Moving beyond from simple console applications...
   ```js
   /* app.js */
   
-  // Load the built-in 'http' module
+  // Load the built-in 'http' module.
   var http = require('http');
 
-  // Create an http.Server object, and provide a callback that fires after 'request' events
+  // Create an http.Server object, and provide a callback that fires after 'request' events.
   var server = http.createServer(function (request, response) {
-     // Respond to the http request with "Hello World" and a basic header
+     // Respond to the http request with "Hello World" and a basic header.
      response.writeHead(200, {'Content-Type': 'text/plain'});
      response.end('Hello World\n');
   });
