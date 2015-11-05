@@ -250,8 +250,10 @@ For the uninitiated, MAX_PATH is a limitation with many windows tools and APIs t
 > :triangular_flag_on_post: **TODO** Find team contact for VSOnline and any other teams.
 
 ## Contribution guidelines
-### Pull requests
-Please make a pull reqeust for any change to the README (minor spelling and wording changes are fine to commit to master). This enables everyone to stay updated on what's going on in the repo. We'll be lax on this in the beginning as we work together to populate this with an initial set of content. 
+### Updating content
+Please file an issue on any major changes you're planning - e.g. "Add new X section".
+
+It's also good to make a pull reqeust for any change to the README (minor spelling and wording changes are fine to commit to master). This enables everyone to stay updated on what's going on in the repo. We'll be lax on this in the beginning as we work together to populate this with an initial set of content. 
 
 ### Emoji legend
 
