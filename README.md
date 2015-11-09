@@ -14,7 +14,7 @@ Note that this is not intended to be a comprehensive set of recommendations. Rat
 ### Pull requests are welcome!
 This is still a work in progress, an experiment - if you will, and we'd love your help to make it better! Please file an issue on any major changes you're planning - e.g. "Add new X section", and assign yourself to issues you intend to take on to prevent duplication of effort.
 
-It's also good to make a pull reqeust for any change to the README (minor spelling and wording changes are fine to commit to master). This enables everyone to stay updated on what's going on in the repo. We'll be lax on this in the beginning as we work together to populate this with an initial set of content. 
+It's also good to make a pull request for any change to the README (minor spelling and wording changes are fine to commit to master). This enables everyone to stay updated on what's going on in the repo. We'll be lax on this in the beginning as we work together to populate this with an initial set of content. 
 
 ### Emoji legend
 
@@ -169,7 +169,7 @@ We went through locally installed packages above, and installing packages global
 ## Configuring and customizing your Windows development environment
 ### Command line console and other useful tools
 One of the painpoints we hear from users is that the command line console in Windows could use some work. We hear ya, and we're [working on it](https://wpdev.uservoice.com/forums/266908). In the meantime, we want to enable you to have the best experience possible. So here are some links to recommended tools to complement your existing experience.
-* **cmd:** cmd has had some improvements in Windows 10, so be sure to check it out if you abandoned ship in the past :smiley:. When you're working with Node.js, chances are you'll be spending a bit more time in the console, so it's well worth brushing up on your [CLI commands](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything).
+* **cmd:** cmd has had some improvements in Windows 10, so be sure to check it out if you abandoned ship in the past :smiley:. When you're working with Node.js, chances are you'll be spending a bit more time in the console, so it's well worth brushing up on your CLI commands.
 * **PowerShell:** PowerShell is a powerful object-oriented shell (as opposed to a text-based shell). It's a bit of a learning curve, but well worth it. It also has a bunch of aliases for commands, like `ls`, that'll make bash-happy people feel more at home. Here's a [good walkthrough](https://developer.rackspace.com/blog/powershell-101-from-a-linux-guy/) of some PowerShell commands from a *nix perspective, and there are [many other resources](https://technet.microsoft.com/en-us/scriptcenter/dd742419.aspx) to help you get started.
 * **Chocolatey:** [Chocolatey](https://chocolatey.org) is the apt-get of Windows. There are also some other alternatives like Ninite which have their own advantages, but Chocolatey is the most commonly used.
 * **Git:** `choco install git`
