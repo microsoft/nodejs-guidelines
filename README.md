@@ -1,21 +1,17 @@
 # Microsoft + Node.js Guidelines
 Microsoft :heart: Node.js!
 
-We work hard to contribute to the Node.js community and we want to make sure your experience is as seamless as possible. 
-
-In particular, our goals here are to:
+We work hard to contribute to the Node.js community and we want to make sure your experience is as seamless as possible. In particular, our goals here are to:
 * make it easier for people using Microsoft services and technologies to get started on the right foot with Node.js
 * consolidate Microsoft's Node.js offerings in a centralized place to make it easier for you to find information
 * communicate status on key issues we're addressing and collecting feedback from the Node.js community
 * provide a forum to connect various teams at Microsoft working on improving the Node.js experience.
 
-Pull requests are welcome!
-
 Note that this is not intended to be a comprehensive set of recommendations. Rather it's meant to be a helpful set of content that makes it easier to avoid any potential gotchas, and the beginning of what we expect to be an ongoing conversation on how we can improve the Node.js experience on Microsoft platforms.
 
 ## Contribution guidelines
 
-### Updating content
+### Pull requests are welcome!
 Please file an issue on any major changes you're planning - e.g. "Add new X section", and assign yourself to issues you intend to take on to prevent duplication of effort. 
 
 It's also good to make a pull reqeust for any change to the README (minor spelling and wording changes are fine to commit to master). This enables everyone to stay updated on what's going on in the repo. We'll be lax on this in the beginning as we work together to populate this with an initial set of content. 
