@@ -38,6 +38,8 @@ It's also good to make a pull reqeust for any change to the README (minor spelli
   * [MAX_PATH explanation and workarounds](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#max_path-explanation-and-workarounds)
   * [Compiling native addon modules](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#compiling-native-addon-modules)
 * [Writing cross-platform apps](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#writing-cross-platform-apps)
+* [Deployment](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#deployment)
+* [Application-specific tips](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#application-specific-tips-and-tricks)
 * [Node.js + Microsoft products, services, and contributions](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#nodejs--microsoft-products-services-and-contributions)
 * [Anything you want!](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#contribution-guidelines)
 
