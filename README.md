@@ -38,9 +38,8 @@ It's also good to make a pull reqeust for any change to the README (minor spelli
   * [MAX_PATH explanation and workarounds](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#max_path-explanation-and-workarounds)
   * [Compiling native addon modules](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#compiling-native-addon-modules)
 * [Writing cross-platform apps](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#writing-cross-platform-apps)
-* Node.js + Microsoft products, services, and contributions
-* Contribution guidelines to this repo
-  
+* [Node.js + Microsoft products, services, and contributions](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#nodejs--microsoft-products-services-and-contributions)
+* [Anything you want!](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#contribution-guidelines)
 
 ## Hello World
 Let's start with the basics. 
@@ -181,9 +180,9 @@ One of the painpoints we hear from users is that the command line console in Win
 > :chart_with_upwards_trend: **IN PROGRESS** We're currently planning the next Windows release, so it's a great time to let us know your biggest command line painpoints! 
 
 ### Editors and IDEs
-* **Visual Studio Code:** [Code] (https://code.visualstudio.com/) is a light weight code editor. Yet, it offers powerful capabilies in [editing](https://code.visualstudio.com/Docs/editor/editingevolved),  [debugging](https://code.visualstudio.com/Docs/editor/debugging), and [git integration](https://code.visualstudio.com/Docs/editor/versioncontrol) for Node.js development. It is free and available on your favorite platform - Windows, Mac, and Linux. For more information, check out: http://johnpapa.net/visual-studio-code.
+* **[Visual Studio Code](https://code.visualstudio.com/)** is a light weight code editor. Yet, it offers powerful capabilies in [editing](https://code.visualstudio.com/Docs/editor/editingevolved),  [debugging](https://code.visualstudio.com/Docs/editor/debugging), and [git integration](https://code.visualstudio.com/Docs/editor/versioncontrol) for Node.js development. It is free and available on your favorite platform - Windows, Mac, and Linux. For more information, check out: http://johnpapa.net/visual-studio-code.
 
-* **Node.js Tools for Visual Studio:** [Node.js Tools for VS](https://aka.ms/explorentvs) is a free, open-source extension that turns Visual Studio into a powerful Node.js IDE: intelligent code completions, advanced debugging and profiling, cloud deployment, unit-testing, REPL window, and more. For more information, check out this [overview video.](https://channel9.msdn.com/Blogs/Seth-Juarez/Nodejs-Tools-for-Visual-Studio)
+* **[Node.js Tools for Visual Studio](https://aka.ms/explorentvs)** is a free, open-source extension that turns Visual Studio into a powerful Node.js IDE: intelligent code completions, advanced debugging and profiling, cloud deployment, unit-testing, REPL window, and more. For more information, check out this [overview video.](https://channel9.msdn.com/Blogs/Seth-Juarez/Nodejs-Tools-for-Visual-Studio)
 
 ### MAX_PATH Explanation and Workarounds
 For the uninitiated, MAX_PATH is a limitation with many windows tools and APIs that sets the maximum path character length to 260 characters. There are some workarounds involving UNC paths, but unfortunately not all APIs support it, and that's not the default. This can be problematic when working with node modules because dependencies are often installed in a nested manner.
@@ -261,10 +260,8 @@ Sometimes, when deploying a native module to production, oftentimes it is not po
 * http://shapeshed.com/writing-cross-platform-node/
 * https://gist.github.com/domenic/2790533
 
-## IoT development
-* Node-Chakra: https://github.com/Microsoft/node#readme
-
 ## Deployment
+> :triangular_flag_on_post: **TODO**
 * Continuous integration with VSO.
 * Docker and containers.
 * Cross-platform remote debugging.
@@ -272,13 +269,12 @@ Sometimes, when deploying a native module to production, oftentimes it is not po
   * [GitHub repo](https://github.com/tjanczuk/iisnode/wiki) and [wiki](https://github.com/tjanczuk/iisnode/wiki)
   * [Scott Hanselman blog post](Installing and Running node.js applications within IIS on Windows - Are you mad?)
 
-## Application specific tips and tricks
+## Application-specific tips and tricks
+> :triangular_flag_on_post: **TODO**
 * Setting up MongoDB.
 * Setting up SQL.
 * .NET in-process using Edge.js.
 * [node-windows](https://github.com/coreybutler/node-windows): Windows services, logging, and commands using Node.js
-
-### TypeScript and Node.js tips
 
 ## Node.js + Microsoft products, services, and contributions
 * [**Visual Studio Code**](https://code.visualstudio.com/): lightweight cross-platform editor for building and debugging modern web and cloud applications.
