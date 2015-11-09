@@ -185,8 +185,8 @@ One of the painpoints we hear from users is that the command line console in Win
 
 * **Node.js Tools for Visual Studio:** [Node.js Tools for VS](https://aka.ms/explorentvs) is a free, open-source extension that turns Visual Studio into a powerful Node.js IDE: intelligent code completions, advanced profiling and debugging (local and remote cross-platform), cloud deployment, unit-testing, REPL window, and more. For more information, check out: https://channel9.msdn.com/Blogs/Seth-Juarez/Nodejs-Tools-for-Visual-Studio.
 
-## So... how about the MAX_PATH issue?
-For the uninitiated, MAX_PATH is a limitation with many windows tools and APIs that sets the maximum path character length to 260 characters. There are some workarounds involving UNC paths, but unfortunately not all APIs support it, and that's not the default. This can be problematic when working with node modules because 
+## MAX_PATH Explanation and Workarounds
+For the uninitiated, MAX_PATH is a limitation with many windows tools and APIs that sets the maximum path character length to 260 characters. There are some workarounds involving UNC paths, but unfortunately not all APIs support it, and that's not the default. This can be problematic when working with node modules because dependencies are often installed in a nested manner.
 
 ### Workarounds
 
@@ -201,7 +201,11 @@ For the uninitiated, MAX_PATH is a limitation with many windows tools and APIs t
   * Ships with node v5
   * Or… > npm install –g npm-windows-upgrade
 * Future:
-  * .NET file APIs
+  * .NET file APIs:
+    * The plan: https://www.youtube.com/watch?v=lpa2OFauASM
+    * Progress :tada: https://github.com/dotnet/corefx/issues/645
+
+For additional discussion, please see https://github.com/Microsoft/nodejstools/issues/69
 
 ## Compiling native addon modules
 There are three primary reasons you might be interested in this section: 
