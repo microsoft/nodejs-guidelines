@@ -26,19 +26,19 @@ It's also good to make a pull reqeust for any change to the README (minor spelli
 
 
 ## Table of contents
-* Hello World
-* Working with npm packages 
-  * Using an existing npm package
-  * Managing npm dependencies
-  * Publishing npm packages to the registry
-  * Local vs. Global packages
-* Customizing your Windows development environment
-  * Command-line console recommendations and other tools
-  * Editors and IDEs
-  * MAX_PATH explanation and workarounds
-  * Compiling native addon modules
-* Dealing with platform-specific issues and writing portable code
-* Node.js products, services, and contributions from Microsoft
+* [Hello World](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#hello-world)
+* [Working with npm packages](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#working-with-npm-packages)
+  * [Using an existing npm package](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#using-an-existing-npm-package)
+  * [Managing npm dependencies](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#managing-npm-dependencies)
+  * [Publishing npm packages to the registry](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#publishing-npm-packages-to-the-registry)
+  * [Local vs. Global packages](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#local-vs-global-packages)
+* [Configuring and Customizing your Windows development environment](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#configuring-and-customizing-your-windows-development-environment)
+  * [Command-line console recommendations and other tools](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#command-line-console-and-other-useful-tools)
+  * [Editors and IDEs](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#editors-and-ides)
+  * [MAX_PATH explanation and workarounds](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#max_path-explanation-and-workarounds)
+  * [Compiling native addon modules](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#compiling-native-addon-modules)
+* [Writing cross-platform apps](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#writing-cross-platform-apps)
+* Node.js + Microsoft products, services, and contributions
 * Contribution guidelines to this repo
   
 
@@ -125,7 +125,7 @@ There are many more packages available at your disposal (200K and counting!). He
 
 > :bulb: Most of the packages available via npm tend to be pure javascript, but not all of them. For instance, there's a small percentage of native module addons available via npm that provide Node.js bindings, but ultimately call into native  C++ code. This includes packages with `node-gyp`, `node-pre-gyp`, and `nan` dependencies. In order to install and run these packages, some additional machine configuration is required (described below).
 
-### Managing your npm dependencies
+### Managing npm dependencies
 Once you start installing npm packages, you'll need a way to keep track of all of your dependencies. In Node.js, you do this through a `package.json` file. 
 
 1. To create a `package.json` file, run the `npm init` in your app directory. 
@@ -161,7 +161,7 @@ We went through locally installed packages above, and installing packages global
   
 2. `http-server .` to start a basic fileserver from any directory.
 
-## Configuring your Windows development environment
+## Configuring and customizing your Windows development environment
 ### Command line console and other useful tools
 One of the painpoints we hear from users is that the command line console in Windows could use some work. We hear ya, and we're [working on it](https://wpdev.uservoice.com/forums/266908). In the meantime, we want to enable you to have the best experience possible. So here are some links to recommended tools to complement your existing experience.
 * **cmd:** cmd has had some improvements in Windows 10, so be sure to check it out if you abandoned ship in the past :smiley:. When you're working with Node.js, chances are you'll be spending a bit more time in the console, so it's well worth brushing up on your [CLI commands](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything).
@@ -280,7 +280,7 @@ Sometimes, when deploying a native module to production, oftentimes it is not po
 
 ### TypeScript and Node.js tips
 
-## Microsoft contributions to Node.js
+## Node.js + Microsoft products, services, and contributions
 * [**Visual Studio Code**](https://code.visualstudio.com/): lightweight cross-platform editor for building and debugging modern web and cloud applications.
 * [**Node.js Tools for Visual Studio**](https://www.visualstudio.com/features/node-js-vs): Free, open-source extension that turns Visual Studio into a powerful Node.js development environment.
 * [**TypeScript**](https://www.npmjs.com/package/typescript): TypeScript is a language for application scale JavaScript development.
