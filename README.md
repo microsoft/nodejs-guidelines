@@ -185,9 +185,26 @@ One of the painpoints we hear from users is that the command line console in Win
 > :chart_with_upwards_trend: **IN PROGRESS** We're currently planning the next Windows release, so it's a great time to let us know your biggest command line painpoints! 
 
 ### Editors and IDEs
-* **Visual Studio Code:** [Code] (https://code.visualstudio.com/) is a light weight code editor. Yet, it offers powerful capabilies in [editing](https://code.visualstudio.com/Docs/editor/editingevolved),  [debugging](https://code.visualstudio.com/Docs/editor/debugging), and [git integration](https://code.visualstudio.com/Docs/editor/versioncontrol) for Node.js development. It is free and available on your favorite platform - Windows, Mac, and Linux. For more information, check out http://johnpapa.net/visual-studio-code.
+* **Visual Studio Code:** [Code] (https://code.visualstudio.com/) is a light weight code editor. Yet, it offers powerful capabilies in [editing](https://code.visualstudio.com/Docs/editor/editingevolved),  [debugging](https://code.visualstudio.com/Docs/editor/debugging), and [git integration](https://code.visualstudio.com/Docs/editor/versioncontrol) for Node.js development. It is free and available on your favorite platform - Windows, Mac, and Linux. For more information, check out: http://johnpapa.net/visual-studio-code.
 
-* **Node.js Tools for Visual Studio:** [NTVS](https://github.com/Microsoft/nodejstools) is a free Node.js extension for Visual Stuido. You can learn about the end-to-end experience of building a Node.js application in Visual Studio: https://channel9.msdn.com/Blogs/Seth-Juarez/Nodejs-Tools-for-Visual-Studio.
+* **Node.js Tools for Visual Studio:** [Node.js Tools for VS](https://aka.ms/explorentvs) is a free, open-source extension that turns Visual Studio into a powerful Node.js IDE: intelligent code completions, advanced profiling and debugging (local and remote cross-platform), cloud deployment, unit-testing, REPL window, and more. For more information, check out: https://channel9.msdn.com/Blogs/Seth-Juarez/Nodejs-Tools-for-Visual-Studio.
+
+## So... how about the MAX_PATH issue?
+For the uninitiated, MAX_PATH is a limitation with many windows tools and APIs that sets the maximum path character length to 260 characters. There are some workarounds involving UNC paths, but unfortunately not all APIs support it, and that's not the default. This can be problematic when working with node modules because 
+
+### Workarounds
+* :heart: Start in a short path (e.g. c:\src)
+  `> npm install -g rimraf`
+  delete files that exceed max_path
+  > npm dedupe
+* moves duplicate packages to top-level
+* `> npm install -g flatten-packages`
+  * moves all packages to top-level, but can cause versioning issues
+* :heart: Upgrade to npm@3
+  * Ships with node v5
+  * Or… > npm install –g npm-windows-upgrade
+* Future:
+  * .NET file APIs
 
 ## Compiling native addon modules
 There are three primary reasons you might be interested in this section: 
@@ -195,9 +212,26 @@ There are three primary reasons you might be interested in this section:
 * you are interested in optimizing the performance of some code by writing it in C++
 * you're running into dreaded `node-gyp` issues and have no idea what's going on.
 
-### Just tell me how to set up my environment!
+### Identifying Native Modules
+How do you know if an npm package you want to install is a native module? Look for nan, node-gyp, or node-pre-gyp dependencies.
+
+### C++ and Node.js? Tell me more...
+* Node.js addon documentation: https://nodejs.org/api/addons.html
+* NodeSchool tutorial https://github.com/workshopper/goingnative
+
+### Environment setup and configuration:
+#### Prerequisites
+**Standalone C++ Build Tools (Technical Preview)**
+1. Install [VC++ Build Tools Technical Preview](https://www.microsoft.com/en-us/download/details.aspx?id=49512)
+> :bulb: [Windows 7 only] requires [.NET Framework 4.5.1](http://www.microsoft.com/en-us/download/details.aspx?id=40773)
+
+2. Install [Python 2.7](https://www.python.org/downloads/), and add it to your `PATH`, `npm config set python python2.7`
+3. Launch cmd, `npm config set msvs_version 2015 --global` (this is instead of `npm install [package name] --msvs_version=2015` every time.)
+4. *SO MUCH npm install* :tada: 
+
+**Visual Studio 2015** (takes longer)
 * Download Python 2.7 (3.x will not work)
-* Download Visual Studio 2015 Community
+* Download Visual Studio 2015 (free Community Edition and Express for Desktop work)
 
  > :bulb: During install, be sure to check the the C++ option.
 
@@ -205,14 +239,18 @@ There are three primary reasons you might be interested in this section:
   * We recognize that installing full VS can be burdensome, so we're investigating ways to provide a bundle with just the required compiler dependencies on Windows. Watch [this thread](https://github.com/nodejs/node-gyp/issues/629) for updates.
   * There are [long-term](https://github.com/nodejs/build/issues/151) efforts underway to build and cache pre-compiled packages on a server to get rid of compiler dependencies altogether.
 
-### C++ and Node.js? Tell me more...
-* Node.js addon documentation: https://nodejs.org/api/addons.html
-* NodeSchool tutorial https://github.com/workshopper/goingnative
+#### Verify it's working
+Here are a few packages you can try installing to see if your environment is set up properly.
+* bson
+* bufferutil
+* kerberos
+* node-sass
+* sqlite3
+* phantomjs
+* utf-8-validate
 
-## So... how about the MAX_PATH issue?
-For the uninitiated, MAX_PATH is a limitation with many windows tools and APIs that sets the maximum path character length to 260 characters. There are some workarounds involving UNC paths, but unfortunately not all APIs support it, and that's not the default. 
-> In the Windows API (with some exceptions discussed in the following paragraphs), the maximum length for a path is MAX_PATH, which is defined as 260 characters.
-> http://msdn.microsoft.com/en-us/library/windows/desktop/aa365247(v=vs.85).aspx
+#### Resolving common issues
+
 ## Common issues
 * MAX_PATH
   * description 
