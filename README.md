@@ -160,6 +160,10 @@ We went through locally installed packages above, and installing packages global
   
 2. `http-server .` to start a basic fileserver from any directory.
 
+### And much more!
+* [npm docs and tutorials](https://docs.npmjs.com/)
+* [Laurie Voss - npm past, present, and future](https://www.youtube.com/watch?v=-fqu-5IuOkc)
+
 ## Configuring and customizing your Windows development environment
 ### Command line console and other useful tools
 One of the painpoints we hear from users is that the command line console in Windows could use some work. We hear ya, and we're [working on it](https://wpdev.uservoice.com/forums/266908). In the meantime, we want to enable you to have the best experience possible. So here are some links to recommended tools to complement your existing experience.
