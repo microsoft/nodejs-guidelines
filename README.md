@@ -287,7 +287,7 @@ Here are a few packages you can try installing to see if your environment is set
 * [**Node-Chakra and Windows IoT**](https://github.com/Microsoft/node#readme): This project enables Node.js to optionally use the Chakra JavaScript engine on Windows 10, allowing Node.js to run on Windows 10 IoT.
 * [**VS Online**](https://www.npmjs.com/~vsonline)
 * [**Docker Tools, `yo docker`**](https://github.com/Microsoft/DockerToolsDocs#yo-docker)
-* [**Node.js Contributors**](https://github.com/nodejs/node#current-project-team-members):
+* [**Node.js Technical Steering Committee**](https://nodejs.org/en/foundation/tsc/) and [**Node.js Foundation Board**](https://nodejs.org/en/foundation/board/)
 * [**Others**](https://www.npmjs.com/~microsoft)
 
 > :triangular_flag_on_post: **TODO** Add other Microsoft services related to Node.js.
