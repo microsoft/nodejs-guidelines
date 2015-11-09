@@ -193,13 +193,14 @@ One of the painpoints we hear from users is that the command line console in Win
 For the uninitiated, MAX_PATH is a limitation with many windows tools and APIs that sets the maximum path character length to 260 characters. There are some workarounds involving UNC paths, but unfortunately not all APIs support it, and that's not the default. This can be problematic when working with node modules because 
 
 ### Workarounds
+
 * :heart: Start in a short path (e.g. c:\src)
-  `> npm install -g rimraf`
-  delete files that exceed max_path
-  > npm dedupe
-* moves duplicate packages to top-level
+* `> npm install -g rimraf`
+  delete files that exceed max_path
+* `> npm dedupe`
+  moves duplicate packages to top-level
 * `> npm install -g flatten-packages`
-  * moves all packages to top-level, but can cause versioning issues
+  moves all packages to top-level, but can cause versioning issues
 * :heart: Upgrade to npm@3
   * Ships with node v5
   * Or… > npm install –g npm-windows-upgrade
@@ -250,35 +251,29 @@ Here are a few packages you can try installing to see if your environment is set
 * utf-8-validate
 
 #### Resolving common issues
+![native-cheatsheet](https://cloud.githubusercontent.com/assets/762848/11049315/4b070502-86f2-11e5-8969-606bb9fa9959.png)
 
-## Common issues
-* MAX_PATH
-  * description 
-  * deleting/moving files
-  * workarounds
-  * progress
-* node-gyp
-  * description
-  * setup
-  * progress
-  
-## Dealing with platform-specific issues and writing portable code
-* Check for common node.js errors.
+
+## Writing cross-platform apps
+* http://shapeshed.com/writing-cross-platform-node/
 * https://gist.github.com/domenic/2790533
 
 ## IoT development
-* Node-Chakra
+* Node-Chakra: https://github.com/Microsoft/node#readme
 
 ## Deployment
 * Continuous integration with VSO.
 * Docker and containers.
 * Cross-platform remote debugging.
-* iisnode
+* iisnode:
+  * [GitHub repo](https://github.com/tjanczuk/iisnode/wiki) and [wiki](https://github.com/tjanczuk/iisnode/wiki)
+  * [Scott Hanselman blog post](Installing and Running node.js applications within IIS on Windows - Are you mad?)
 
 ## Application specific tips and tricks
 * Setting up MongoDB.
 * Setting up SQL.
 * .NET in-process using Edge.js.
+* [node-windows](https://github.com/coreybutler/node-windows): Windows services, logging, and commands using Node.js
 
 ### TypeScript and Node.js tips
 
