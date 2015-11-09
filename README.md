@@ -161,7 +161,7 @@ We went through locally installed packages above, and installing packages global
   
 2. `http-server .` to start a basic fileserver from any directory.
 
-## Customizing your Windows development environment
+## Configuring your Windows development environment
 ### Command line console and other useful tools
 One of the painpoints we hear from users is that the command line console in Windows could use some work. We hear ya, and we're [working on it](https://wpdev.uservoice.com/forums/266908). In the meantime, we want to enable you to have the best experience possible. So here are some links to recommended tools to complement your existing experience.
 * **cmd:** cmd has had some improvements in Windows 10, so be sure to check it out if you abandoned ship in the past :smiley:. When you're working with Node.js, chances are you'll be spending a bit more time in the console, so it's well worth brushing up on your [CLI commands](http://lifehacker.com/5633909/who-needs-a-mouse-learn-to-use-the-command-line-for-almost-anything).
@@ -185,10 +185,10 @@ One of the painpoints we hear from users is that the command line console in Win
 
 * **Node.js Tools for Visual Studio:** [Node.js Tools for VS](https://aka.ms/explorentvs) is a free, open-source extension that turns Visual Studio into a powerful Node.js IDE: intelligent code completions, advanced debugging and profiling, cloud deployment, unit-testing, REPL window, and more. For more information, check out this [overview video.](https://channel9.msdn.com/Blogs/Seth-Juarez/Nodejs-Tools-for-Visual-Studio)
 
-## MAX_PATH Explanation and Workarounds
+### MAX_PATH Explanation and Workarounds
 For the uninitiated, MAX_PATH is a limitation with many windows tools and APIs that sets the maximum path character length to 260 characters. There are some workarounds involving UNC paths, but unfortunately not all APIs support it, and that's not the default. This can be problematic when working with node modules because dependencies are often installed in a nested manner.
 
-### Workarounds
+#### Workarounds
 
 * :heart: Start in a short path (e.g. c:\src)
 * `> npm install -g rimraf`
@@ -207,21 +207,21 @@ For the uninitiated, MAX_PATH is a limitation with many windows tools and APIs t
 
 For additional discussion, please see https://github.com/Microsoft/nodejstools/issues/69
 
-## Compiling native addon modules
+### Compiling native addon modules
 There are three primary reasons you might be interested in this section: 
 * you have an existing C++ libary you'd like to take advantage of in your Node.js application
 * you are interested in optimizing the performance of some code by writing it in C++
 * you're running into dreaded `node-gyp` issues and have no idea what's going on.
 
-### Identifying Native Modules
+#### Identifying Native Modules
 How do you know if an npm package you want to install is a native module? Look for nan, node-gyp, or node-pre-gyp dependencies.
 
-### C++ and Node.js? Tell me more...
+#### C++ and Node.js? Tell me more...
 * Node.js addon documentation: https://nodejs.org/api/addons.html
 * NodeSchool tutorial https://github.com/workshopper/goingnative
 
-### Environment setup and configuration:
-#### Prerequisites
+#### Environment setup and configuration:
+##### Prerequisites
 **Standalone C++ Build Tools (Technical Preview)**
 1. Install [VC++ Build Tools Technical Preview](https://www.microsoft.com/en-us/download/details.aspx?id=49512)
 > :bulb: [Windows 7 only] requires [.NET Framework 4.5.1](http://www.microsoft.com/en-us/download/details.aspx?id=40773)
@@ -240,7 +240,7 @@ How do you know if an npm package you want to install is a native module? Look f
   * We recognize that installing full VS can be burdensome, so we're investigating ways to provide a bundle with just the required compiler dependencies on Windows. Watch [this thread](https://github.com/nodejs/node-gyp/issues/629) for updates.
   * There are [long-term](https://github.com/nodejs/build/issues/151) efforts underway to build and cache pre-compiled packages on a server to get rid of compiler dependencies altogether.
 
-#### Verify it's working
+##### Verify it's working
 Here are a few packages you can try installing to see if your environment is set up properly.
 * bson
 * bufferutil
@@ -250,11 +250,11 @@ Here are a few packages you can try installing to see if your environment is set
 * phantomjs
 * utf-8-validate
 
-#### Resolving common issues
+##### Resolving common issues
 ![native-cheatsheet](https://cloud.githubusercontent.com/assets/762848/11049315/4b070502-86f2-11e5-8969-606bb9fa9959.png)
 
 
-#### Deploying native modules
+##### Deploying native modules
 Sometimes, when deploying a native module to production, oftentimes it is not possible to set up the production machine with all the required prerequisites to build the native addon. Therefore, building locally or on a CI server and deploying `node_modules` may be the best option assuming there aren't any platform differences between the development and deployment machines.
 
 ## Writing cross-platform apps
