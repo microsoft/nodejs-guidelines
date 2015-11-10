@@ -136,6 +136,8 @@ Once you start installing npm packages, you'll need a way to keep track of all o
   
 2. Npm will prompt you to fill in the details about your package.
 3. In the `package.json` file, there is a "dependencies" section, and within it, an entry for `"express"`. A value of `"*"` would mean that the latest version should be used. To add this entry automatically when you install a package, you can add a `--save` flag: `npm install express --save`.
+  > :bulb: if you only require a dependency as part of a development environment, then you could/should install the package in the "devDependencies".  This is accomplished by using the `--save-dev` parameter: `npm install --save-dev mocha`
+
 4. Now that your packages are listed in package.json, npm will always know which dependencies are required for your app. If you ever need to restore your packages, you can run `npm install` from your package directory.
 
 > :bulb: When you distribute your application, we recommend adding the `node_modules` folder to `.gitignore` so that you don't clutter your repo with needless files. This also makes it easier to work with multiple platforms that. If you want to keep things as similar as possible between machines, npm offers many options that enable you to fix the version numbers in `package.json`, and even more fine-grained control with `npm-shrinkwrap.json`.
