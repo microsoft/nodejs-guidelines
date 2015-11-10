@@ -32,7 +32,7 @@ It's also good to make a pull request for any change to the README (minor spelli
   * [Managing npm dependencies](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#managing-npm-dependencies)
   * [Publishing npm packages to the registry](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#publishing-npm-packages-to-the-registry)
   * [Local vs. Global packages](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#local-vs-global-packages)
-* [Configuring and Customizing your Windows development environment](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#configuring-and-customizing-your-windows-development-environment)
+* [Configuring your Windows development environment](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#configuring-your-windows-development-environment)
   * [Command-line console recommendations and other tools](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#command-line-console-and-other-useful-tools)
   * [Editors and IDEs](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#editors-and-ides)
   * [MAX_PATH explanation and workarounds](https://github.com/Microsoft/nodejs-guidelines/blob/master/README.md#max_path-explanation-and-workarounds)
@@ -124,7 +124,7 @@ To get a sense for how to use npm packages in your app, let's try getting starte
 
 There are many more packages available at your disposal (200K and counting!). Head on over to https://www.npmjs.com to start exploring the ecosystem.
 
-> :bulb: Most of the packages available via npm tend to be pure javascript, but not all of them. For instance, there's a small percentage of native module addons available via npm that provide Node.js bindings, but ultimately call into native  C++ code. This includes packages with `node-gyp`, `node-pre-gyp`, and `nan` dependencies. In order to install and run these packages, some additional machine configuration is required (described below).
+> :bulb: Most of the packages available via npm tend to be pure JavaScript, but not all of them. For instance, there's a small percentage of native module addons available via npm that provide Node.js bindings, but ultimately call into native  C++ code. This includes packages with `node-gyp`, `node-pre-gyp`, and `nan` dependencies. In order to install and run these packages, some additional machine configuration is required (described below).
 
 ### Managing npm dependencies
 Once you start installing npm packages, you'll need a way to keep track of all of your dependencies. In Node.js, you do this through a `package.json` file. 
@@ -136,11 +136,11 @@ Once you start installing npm packages, you'll need a way to keep track of all o
   
 2. Npm will prompt you to fill in the details about your package.
 3. In the `package.json` file, there is a "dependencies" section, and within it, an entry for `"express"`. A value of `"*"` would mean that the latest version should be used. To add this entry automatically when you install a package, you can add a `--save` flag: `npm install express --save`.
-  > :bulb: if you only require a dependency as part of a development environment, then you could/should install the package in the "devDependencies".  This is accomplished by using the `--save-dev` parameter: `npm install --save-dev mocha`
+ > :bulb: If you only require a dependency as part of a development environment, then you could/should install the package in the "devDependencies".  This is accomplished by using the `--save-dev` parameter. For example: `npm install --save-dev mocha`.
 
-4. Now that your packages are listed in package.json, npm will always know which dependencies are required for your app. If you ever need to restore your packages, you can run `npm install` from your package directory.
+4. Now that your packages are listed in `package.json`, npm will always know which dependencies are required for your app. If you ever need to restore your packages, you can run `npm install` from your package directory.
 
-> :bulb: When you distribute your application, we recommend adding the `node_modules` folder to `.gitignore` so that you don't clutter your repo with needless files. This also makes it easier to work with multiple platforms that. If you want to keep things as similar as possible between machines, npm offers many options that enable you to fix the version numbers in `package.json`, and even more fine-grained control with `npm-shrinkwrap.json`.
+> :bulb: When you distribute your application, we recommend adding the `node_modules` folder to `.gitignore` so that you don't clutter your repo with needless files. This also makes it easier to work with multiple platforms. If you want to keep things as similar as possible between machines, npm offers many options that enable you to fix the version numbers in `package.json`, and even more fine-grained control with `npm-shrinkwrap.json`.
 
 ### Publishing npm packages to the registry
 Once you've created a package, publishing it to the world is only one command away!
@@ -162,38 +162,38 @@ We went through locally installed packages above, and installing packages global
 
   > :bulb: The module will be installed to the path indicated by `npm bin -g`.
   
-2. `http-server .` to start a basic fileserver from any directory.
+2. Run `http-server .` to start a basic fileserver from any directory.
 
 ### And much more!
 * [npm docs and tutorials](https://docs.npmjs.com/)
 * [Laurie Voss - npm past, present, and future](https://www.youtube.com/watch?v=-fqu-5IuOkc)
 
-## Configuring and customizing your Windows development environment
+## Configuring your Windows development environment
 ### Command line console and other useful tools
-One of the painpoints we hear from users is that the command line console in Windows could use some work. We hear ya, and we're [working on it](https://wpdev.uservoice.com/forums/266908). In the meantime, we want to enable you to have the best experience possible. So here are some links to recommended tools to complement your existing experience.
+One of the pain points we hear from users is that the command line console in Windows could use some work. We hear ya, and we're [working on it](https://wpdev.uservoice.com/forums/266908). In the meantime, we want to enable you to have the best experience possible. So here are some links to recommended tools to complement your existing experience.
 * **cmd:** cmd has had some improvements in Windows 10, so be sure to check it out if you abandoned ship in the past :smiley:. When you're working with Node.js, chances are you'll be spending a bit more time in the console, so it's well worth brushing up on your CLI commands.
 * **PowerShell:** PowerShell is a powerful object-oriented shell (as opposed to a text-based shell). It's a bit of a learning curve, but well worth it. It also has a bunch of aliases for commands, like `ls`, that'll make bash-happy people feel more at home. Here's a [good walkthrough](https://developer.rackspace.com/blog/powershell-101-from-a-linux-guy/) of some PowerShell commands from a *nix perspective, and there are [many other resources](https://technet.microsoft.com/en-us/scriptcenter/dd742419.aspx) to help you get started.
 * **Chocolatey:** [Chocolatey](https://chocolatey.org) is the apt-get of Windows. There are also some other alternatives like Ninite which have their own advantages, but Chocolatey is the most commonly used.
-* **Git:** `choco install git`
+* **Git:** `choco install git`.
 * **nvm-windows:** https://github.com/coreybutler/nvm-windows - there are new versions of Node.js coming out all the time, so it can be annoying to migrate between versions. nvm-windows makes it way easier to switch between various versions.
-* **npm-windows-upgrade:** npm is shipped with Node.js, and upgrading on Windows often requires manual upgrade steps. npm-windows-upgrade makes this process much easier. Instally it by running `npm install npm-windows-upgrade -g`, and run the command by running `npm-windows-upgrade`.
+* **npm-windows-upgrade:** npm is shipped with Node.js, and upgrading on Windows often requires manual upgrade steps. npm-windows-upgrade makes this process much easier. Install it by running `npm install npm-windows-upgrade -g`, and run the command by running `npm-windows-upgrade`.
 * **terminal emulators:** cmder and ConEmu.
-* **Cygwin:** [Cygwin](http://cygwin.com/index.html) can be handy if you're more familiar with bash, or are trying to use a node app that assumes a *nix environment. Cygwin is a distribution of popular GNU and other Open Source tools running on Microsoft Windows. The core part is the Cygwin library which provides the POSIX system calls and environment these programs expect.
+* **Cygwin:** [Cygwin](http://cygwin.com/index.html) can be handy if you're more familiar with bash, or are trying to use a Node app that assumes a *nix environment. Cygwin is a distribution of popular GNU and other open source tools running on Microsoft Windows. The core part is the Cygwin library which provides the POSIX system calls and environment these programs expect.
 * **Putty:** ssh client.
 * **WinSCP:** free FTP client.
 * **Fiddler:** a web debugging tool. In general, people use it for the browser-side debugging, but you can also [configure it](http://stackoverflow.com/questions/8697344/can-a-proxy-like-fiddler-be-used-with-node-jss-clientrequest) to view server-side requests from Node.js.
 
-> :triangular_flag_on_post: **TODO** Provide more dev environment options and a powershell script to make things easier.
+> :triangular_flag_on_post: **TODO** Provide more dev environment options and a PowerShell script to make things easier.
 
-> :chart_with_upwards_trend: **IN PROGRESS** We're currently planning the next Windows release, so it's a great time to let us know your biggest command line painpoints! 
+> :chart_with_upwards_trend: **IN PROGRESS** We're currently planning the next Windows release, so it's a great time to let us know your biggest command line pain points! 
 
 ### Editors and IDEs
 * **[Visual Studio Code](https://code.visualstudio.com/)** is a light weight code editor. Yet, it offers powerful capabilies in [editing](https://code.visualstudio.com/Docs/editor/editingevolved),  [debugging](https://code.visualstudio.com/Docs/editor/debugging), and [git integration](https://code.visualstudio.com/Docs/editor/versioncontrol) for Node.js development. It is free and available on your favorite platform - Windows, Mac, and Linux. For more information, check out: http://johnpapa.net/visual-studio-code.
 
 * **[Node.js Tools for Visual Studio](https://aka.ms/explorentvs)** is a free, open-source extension that turns Visual Studio into a powerful Node.js IDE: intelligent code completions, advanced debugging and profiling, cloud deployment, unit-testing, REPL window, and more. For more information, check out this [overview video.](https://channel9.msdn.com/Blogs/Seth-Juarez/Nodejs-Tools-for-Visual-Studio)
 
-### MAX_PATH Explanation and Workarounds
-For the uninitiated, MAX_PATH is a limitation with many windows tools and APIs that sets the maximum path character length to 260 characters. There are some workarounds involving UNC paths, but unfortunately not all APIs support it, and that's not the default. This can be problematic when working with node modules because dependencies are often installed in a nested manner.
+### MAX_PATH explanation and workarounds
+For the uninitiated, MAX_PATH is a limitation with many Windows tools and APIs that sets the maximum path character length to 260 characters. There are some workarounds involving UNC paths, but unfortunately not all APIs support it, and that's not the default. This can be problematic when working with Node modules because dependencies are often installed in a nested manner.
 
 #### Workarounds
 
@@ -205,7 +205,7 @@ For the uninitiated, MAX_PATH is a limitation with many windows tools and APIs t
 * `> npm install -g flatten-packages`
   moves all packages to top-level, but can cause versioning issues
 * :heart: Upgrade to npm@3
-  * Ships with node v5
+  * Ships with Node v5
   * Or… > npm install –g npm-windows-upgrade
 * Future:
   * .NET file APIs:
@@ -220,8 +220,8 @@ There are three primary reasons you might be interested in this section:
 * you are interested in optimizing the performance of some code by writing it in C++
 * you're running into dreaded `node-gyp` issues and have no idea what's going on.
 
-#### Identifying Native Modules
-How do you know if an npm package you want to install is a native module? Look for nan, node-gyp, or node-pre-gyp dependencies.
+#### Identifying native modules
+How do you know if an npm package you want to install is a native module? Look for `nan`, `node-gyp`, or `node-pre-gyp` dependencies.
 
 #### C++ and Node.js? Tell me more...
 * Node.js addon documentation: https://nodejs.org/api/addons.html
@@ -230,6 +230,7 @@ How do you know if an npm package you want to install is a native module? Look f
 #### Environment setup and configuration:
 ##### Prerequisites
 **Standalone C++ Build Tools (Technical Preview)**
+
 1. Install [VC++ Build Tools Technical Preview](https://www.microsoft.com/en-us/download/details.aspx?id=49512)
 > :bulb: [Windows 7 only] requires [.NET Framework 4.5.1](http://www.microsoft.com/en-us/download/details.aspx?id=40773)
 
@@ -241,7 +242,7 @@ How do you know if an npm package you want to install is a native module? Look f
 * Download Python 2.7 (3.x will not work)
 * Download Visual Studio 2015 (free Community Edition and Express for Desktop work)
 
- > :bulb: During install, be sure to check the the C++ option.
+ > :bulb: During installation, be sure to check the the C++ option.
 
 > :chart_with_upwards_trend: **IN PROGRESS** there are currently two efforts underway to make it easier to install native modules.
   * We recognize that installing full VS can be burdensome, so we're investigating ways to provide a bundle with just the required compiler dependencies on Windows. Watch [this thread](https://github.com/nodejs/node-gyp/issues/629) for updates.
@@ -275,24 +276,24 @@ Sometimes, when deploying a native module to production, oftentimes it is not po
 * Cross-platform remote debugging.
 * iisnode:
   * [GitHub repo](https://github.com/tjanczuk/iisnode/wiki) and [wiki](https://github.com/tjanczuk/iisnode/wiki)
-  * [Scott Hanselman blog post](Installing and Running node.js applications within IIS on Windows - Are you mad?)
+  * [Scott Hanselman's blog post](http://www.hanselman.com/blog/InstallingAndRunningNodejsApplicationsWithinIISOnWindowsAreYouMad.aspx)
 
 ## Application-specific tips and tricks
 > :triangular_flag_on_post: **TODO**
 * Setting up MongoDB.
 * Setting up SQL.
 * .NET in-process using Edge.js.
-* [node-windows](https://github.com/coreybutler/node-windows): Windows services, logging, and commands using Node.js
+* [node-windows](https://github.com/coreybutler/node-windows): Windows services, logging, and commands using Node.js.
 
 ## Node.js + Microsoft products, services, and contributions
-* [**Visual Studio Code**](https://code.visualstudio.com/): lightweight cross-platform editor for building and debugging modern web and cloud applications.
+* [**Visual Studio Code**](https://code.visualstudio.com/): Lightweight cross-platform editor for building and debugging modern web and cloud applications.
 * [**Node.js Tools for Visual Studio**](https://www.visualstudio.com/features/node-js-vs): Free, open-source extension that turns Visual Studio into a powerful Node.js development environment.
 * [**TypeScript**](https://www.npmjs.com/package/typescript): TypeScript is a language for application scale JavaScript development.
   * Also useful for working with typescript is [tsd](https://www.npmjs.com/package/tsd), which enables you to quickly download TypeScript definition files.
 * [**Azure SDK for Node.js**](https://github.com/Azure/azure-sdk-for-node#readme): We provide both [fine-grained modules](https://www.npmjs.com/~windowsazure) for different Microsoft Azure services which you can install separately, and an [all-up module](https://www.npmjs.com/package/azure) which contains everything.
-* [**Application Insights**](https://www.npmjs.com/~msftapplicationinsights): monitor your application's performance and usage with just a few lines of code.
+* [**Application Insights**](https://www.npmjs.com/~msftapplicationinsights): Monitor your application's performance and usage with just a few lines of code.
 * [**Node-Chakra and Windows IoT**](https://github.com/Microsoft/node#readme): This project enables Node.js to optionally use the Chakra JavaScript engine on Windows 10, allowing Node.js to run on Windows 10 IoT.
-* [**VS Online**](https://www.npmjs.com/~vsonline)
+* [**Visual Studio Online**](https://www.npmjs.com/~vsonline)
 * [**Docker Tools, `yo docker`**](https://github.com/Microsoft/DockerToolsDocs#yo-docker)
 * [**Node.js Technical Steering Committee**](https://nodejs.org/en/foundation/tsc/) and [**Node.js Foundation Board**](https://nodejs.org/en/foundation/board/)
 * [**Others**](https://www.npmjs.com/~microsoft)
