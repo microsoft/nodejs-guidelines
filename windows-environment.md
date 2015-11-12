@@ -36,7 +36,7 @@ For the uninitiated, MAX_PATH is a limitation with many Windows tools and APIs t
   moves duplicate packages to top-level
 * `> npm install -g flatten-packages`
   moves all packages to top-level, but can cause versioning issues
-* :heart: Upgrade to npm@3 which attempts to the make `node_modules` folder heirarchy maximally flat. 
+* :heart: Upgrade to npm@3 which attempts to the make the `node_modules` folder heirarchy maximally flat. 
   * Ships with Node v5
   * Or… > npm install –g npm-windows-upgrade
 * Future:
