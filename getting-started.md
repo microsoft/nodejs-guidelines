@@ -119,7 +119,7 @@ We went through locally installed packages above, and installing packages global
 
 2. Run `http-server .` to start a basic fileserver from any directory.
 
-> :bulb: In fact the only difference when using -g is that exeecutables are placed in a folder that is on the %path%. If you install without the -g option you can still access those executables in `.\node_modules\.bin`. Doing this will help avoid version clashes when a project uses skrinkwrap or otherwise specifies the version of a module different to other projects. It also avoids the need for manual install instructions for some dependencies so a single "npm install" will do.
+> :bulb: In fact the only difference when using -g is that executables are placed in a folder that is on the path. If you install without the -g option you can still access those executables in `.\node_modules\.bin`. This folder is automatically added to the path when any scripts defined in `package.json` are run. Doing this will help avoid version clashes when a project uses skrinkwrap or otherwise specifies the version of a module different to other projects. It also avoids the need for manual install instructions for some dependencies so a single "npm install" will do.
 
 ### And much more!
 * [npm docs and tutorials](https://docs.npmjs.com/)
