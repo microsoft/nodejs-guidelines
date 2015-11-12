@@ -7,7 +7,7 @@ Let's start with the basics.
 2. Create a new directory named `hello-world`, add a new `app.js` file:
   ```js
   /* app.js */
-  console.log('Hello World!')
+  console.log('Hello World!');
   ```
 
 3. In the commmand prompt, run `node app.js`.
@@ -67,7 +67,7 @@ To get a sense for how to use npm packages in your app, let's try getting starte
 
   app.get('/', function (req, res) {
     res.send('Hello World!');
-  })
+  });
 
   var port = process.env.PORT || 3000;
 
