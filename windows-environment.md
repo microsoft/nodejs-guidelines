@@ -9,8 +9,10 @@ One of the pain points we hear from users is that the command line console in Wi
 * **npm-windows-upgrade:** npm is shipped with Node.js, and upgrading on Windows often requires manual upgrade steps. npm-windows-upgrade makes this process much easier. Install it by running `npm install npm-windows-upgrade -g`, and run the command by running `npm-windows-upgrade`.
 * **terminal emulators:** cmder and ConEmu.
 * **Cygwin:** [Cygwin](http://cygwin.com/index.html) can be handy if you're more familiar with bash, or are trying to use a Node app that assumes a *nix environment. Cygwin is a distribution of popular GNU and other open source tools running on Microsoft Windows. The core part is the Cygwin library which provides the POSIX system calls and environment these programs expect.
+* **Git for Windows** [Git for windows](https://git-for-windows.github.io/) provides native versions of the BASH shell and some *nix utilites in addition to the command line git and GUI tool. It is probably the best of shells based on MSYS/MinGW but still supplies ports of older versions of the *nix utilities. Works very well in combination with [ConEmu](https://conemu.github.io/).    
+* **GitHub Desktop** [GitHub Desktop](https://desktop.github.com/) (previosuly GitHub for Windows) is primarilarly a GUI but it also includes a version of MSYS/MinGW Bash.  
 * **Putty:** ssh client.
-* **WinSCP:** free FTP client.
+* **WinSCP:** free [S]FTP client, also supports SCP and webDAV.
 * **Fiddler:** a web debugging tool. In general, people use it for the browser-side debugging, but you can also [configure it](http://stackoverflow.com/questions/8697344/can-a-proxy-like-fiddler-be-used-with-node-jss-clientrequest) to view server-side requests from Node.js.
 
 > :triangular_flag_on_post: **TODO** Provide more dev environment options and a PowerShell script to make things easier.
@@ -34,7 +36,7 @@ For the uninitiated, MAX_PATH is a limitation with many Windows tools and APIs t
   moves duplicate packages to top-level
 * `> npm install -g flatten-packages`
   moves all packages to top-level, but can cause versioning issues
-* :heart: Upgrade to npm@3
+* :heart: Upgrade to npm@3 which attempts to the make the `node_modules` folder heirarchy maximally flat. 
   * Ships with Node v5
   * Or… > npm install –g npm-windows-upgrade
 * Future:
