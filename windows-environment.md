@@ -48,7 +48,7 @@ For additional discussion, please see https://github.com/Microsoft/nodejstools/i
 
 ### Compiling native addon modules
 There are three primary reasons you might be interested in this section:
-* you have an existing C++ libary you'd like to take advantage of in your Node.js application
+* you have an existing C++ library you'd like to take advantage of in your Node.js application
 * you are interested in optimizing the performance of some code by writing it in C++
 * you're running into dreaded `node-gyp` issues and have no idea what's going on.
 
