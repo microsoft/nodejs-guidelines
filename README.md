@@ -38,7 +38,6 @@ This is still a work in progress, an experiment - if you will, and we'd love you
 
 > :chart_with_upwards_trend: **IN PROGRESS** This provides awareness about an important issue that we're currently working on resolving.
 
-
 ## Node.js + Microsoft products, services, and contributions
 * [**Visual Studio Code**](https://code.visualstudio.com/): Lightweight cross-platform editor for building and debugging modern web and cloud applications.
 * [**Node.js Tools for Visual Studio**](https://www.visualstudio.com/features/node-js-vs): Free, open-source extension that turns Visual Studio into a powerful Node.js development environment.
