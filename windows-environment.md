@@ -46,7 +46,7 @@ For the uninitiated, MAX_PATH is a limitation with many Windows tools and APIs t
 
 For additional discussion, please see https://github.com/Microsoft/nodejstools/issues/69
 
-### Compiling native addon modules
+### Compiling native Addon modules
 There are three primary reasons you might be interested in this section:
 * you have an existing C++ library you'd like to take advantage of in your Node.js application
 * you are interested in optimizing the performance of some code by writing it in C++
@@ -56,7 +56,7 @@ There are three primary reasons you might be interested in this section:
 How do you know if an npm package you want to install is a native module? Look for `nan`, `node-gyp`, or `node-pre-gyp` dependencies.
 
 #### C++ and Node.js? Tell me more...
-* Node.js addon documentation: https://nodejs.org/api/addons.html
+* Node.js Addon documentation: https://nodejs.org/api/addons.html
 * NodeSchool tutorial https://github.com/workshopper/goingnative
 
 #### Environment setup and configuration:
@@ -95,4 +95,4 @@ Here are a few packages you can try installing to see if your environment is set
 
 
 ##### Deploying native modules
-Sometimes, when deploying a native module to production, oftentimes it is not possible to set up the production machine with all the required prerequisites to build the native addon. Therefore, building locally or on a CI server and deploying `node_modules` may be the best option assuming there aren't any platform differences between the development and deployment machines.
+Sometimes, when deploying a native module to production, oftentimes it is not possible to set up the production machine with all the required prerequisites to build the native Addon. Therefore, building locally or on a CI server and deploying `node_modules` may be the best option assuming there aren't any platform differences between the development and deployment machines.
