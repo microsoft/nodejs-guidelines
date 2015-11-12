@@ -28,7 +28,7 @@ Note that this is not intended to be a comprehensive set of recommendations. Rat
   * [Command-line console recommendations and other tools](windows-environment.md#command-line-console-and-other-useful-tools)
   * [Editors and IDEs](windows-environment.md#editors-and-ides)
   * [MAX_PATH explanation and workarounds](windows-environment.md#max_path-explanation-and-workarounds)
-  * [Compiling native addon modules](windows-environment.md#compiling-native-addon-modules)
+  * [Compiling native Addon modules](windows-environment.md#compiling-native-addon-modules)
 * [Building for cross-platform](building-for-cross-platform.md)
 * [Deployment](deployment.md)
 * [Application-specific tips](application-tips.md)
