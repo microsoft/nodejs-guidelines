@@ -124,3 +124,19 @@ We went through locally installed packages above, and installing packages global
 ### And much more!
 * [npm docs and tutorials](https://docs.npmjs.com/)
 * [Laurie Voss - npm past, present, and future](https://www.youtube.com/watch?v=-fqu-5IuOkc)
+
+## Using nodemon
+
+[nodemon](http://nodemon.io/) is a utility that will monitor for any changes in your source and automatically restart your server. Use npm to install it:
+
+```
+npm install -g nodemon
+```` 
+
+After installation, you can launch your application using nodemon. For example: 
+
+```
+nodemon app.js
+``` 
+
+After this, you don't have to restart the Node server after making changes since nodemon will automatically restart it for you. If you're developing a web application, simply refresh your browser to examine your update. Pretty handy for development!
