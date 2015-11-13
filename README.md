@@ -24,6 +24,7 @@ Note that this is not intended to be a comprehensive set of recommendations. Rat
   * [Managing npm dependencies](getting-started.md#managing-npm-dependencies)
   * [Publishing npm packages to the registry](getting-started.md#publishing-npm-packages-to-the-registry)
   * [Local vs. Global packages](getting-started.md#local-vs-global-packages)
+* [Using nodemon](getting-started.md#using-nodemon)
 * [Configuring your Windows development environment](windows-environment.md#configuring-your-windows-development-environment)
   * [Command-line console recommendations and other tools](windows-environment.md#command-line-console-and-other-useful-tools)
   * [Editors and IDEs](windows-environment.md#editors-and-ides)
