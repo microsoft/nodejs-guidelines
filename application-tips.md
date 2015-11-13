@@ -15,6 +15,7 @@
 7. Load the documentdb module: `var DocumentClient = require('documentdb').DocumentClient;`
 8. Create a new `DocumentClient` object by specifying the endpoint URL and master key: `var ddbClient = new DocumentClient(endpointUrl, {masterKey: masterKey});`
  > :bulb: The endpoint URL and keys can be found in the Azure portal by navigating to your DocumentDB account
+ 
 9. Query all documents in a particular collection in a database
 ```javascript
 // note: the below code queries all documents in the collection with no 
