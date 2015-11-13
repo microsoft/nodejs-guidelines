@@ -4,6 +4,39 @@
 * .NET in-process using Edge.js.
 * [node-windows](https://github.com/coreybutler/node-windows): Windows services, logging, and commands using Node.js.
 
+### Setting up and working with Azure DocumentDB
+
+1. [Create a DocumentDB database account](https://azure.microsoft.com/en-us/documentation/articles/documentdb-create-account/)
+2. [Create a database](https://azure.microsoft.com/en-us/documentation/articles/documentdb-create-database/)
+3. [Create a collection](https://azure.microsoft.com/en-us/documentation/articles/documentdb-create-collection/)
+4. [Add documents to the collection](https://azure.microsoft.com/en-us/documentation/articles/documentdb-view-json-document-explorer/)
+5. Navigate to the root project directory and install the `documentdb` package: `npm install documentdb`
+6. *(Optional, but helpful for IntelliSense support in Visual Studio Code)* Install the type definition file for DocumentDB with `tsd install documentdb`
+7. Load the documentdb module: `var DocumentClient = require('documentdb').DocumentClient;`
+8. Create a new `DocumentClient` object by specifying the endpoint URL and master key: `var ddbClient = new DocumentClient(endpointUrl, {masterKey: masterKey});`
+ > :bulb: The endpoint URL and keys can be found in the Azure portal by navigating to your DocumentDB account
+9. Query all documents in a particular collection in a database
+```javascript
+// note: the below code queries all documents in the collection with no 
+// predicate to filter any documents out
+ddbClient.queryDatabases('SELECT * from d WHERE d.id = "database_name"')
+    .current(function (err, database) {
+        ddbClient.queryCollections(database._self, 'SELECT * FROM c WHERE c.id = "collection_name"')
+            .current(function (err, collection) {
+                var docQuery = 'SELECT * FROM collection c';
+                ddbClient.queryDocuments(collection._self, docQuery)
+                    .toArray(function (err, documents) {
+                        if (!err) {
+                            console.log('found ' + documents.length + ' documents...');
+                            for (var i = 0; i < documents.length; i++) {
+                                console.log(documents[i]);
+                            }
+                        }
+                    });
+            });
+    });
+```
+
 ### Setting up and working with MongoDB
 
 1. [Install MongoDB on Windows](https://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/)
