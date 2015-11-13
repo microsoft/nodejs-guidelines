@@ -4,8 +4,8 @@ Microsoft :heart: Node.js!
 We work hard to contribute to the Node.js community and we want to make sure your experience is as seamless as possible. In particular, our goals here are to:
 * make it easier for people using Microsoft services and technologies to get started on the right foot with Node.js
 * consolidate Microsoft's Node.js offerings in a centralized place to make it easier for you to find information
-* communicate status on key issues we're addressing and collecting feedback from the Node.js community
-* provide a forum to connect various teams at Microsoft working on improving the Node.js experience.
+* communicate status on key issues we're addressing and collect feedback from the Node.js community on how we can do better.
+* provide a forum to connect with various teams at Microsoft working on improving the Node.js experience.
 
 Note that this is not intended to be a comprehensive set of recommendations. Rather it's meant to be a helpful set of content that makes it easier to avoid any potential gotchas, and the beginning of what we expect to be an ongoing conversation on how we can improve the Node.js experience on Microsoft platforms.
 
