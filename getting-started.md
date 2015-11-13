@@ -27,8 +27,7 @@ Let's start with the basics.
      response.end('Hello World!\n');
   });
 
-  // Try retrieving a port from an environment variable, otherwise fallback to 8080.
-  var port = process.env.PORT || 8080;
+  var port = 3000;
 
   // Start listening on the specified port and print out a url to visit.
   server.listen(port);
@@ -69,7 +68,7 @@ To get a sense for how to use npm packages in your app, let's try getting starte
     res.send('Hello World!');
   });
 
-  var port = process.env.PORT || 3000;
+  var port = 3000;
 
   app.listen(port);
   console.log('Listening on http://localhost:' + port);
