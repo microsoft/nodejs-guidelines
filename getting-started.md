@@ -44,7 +44,7 @@ As shown above, it's pretty impressive what you can do with so few lines of code
 
 Introducing, npm!
 
-npm is the package manager for JavaScript. npm ships with Node.js, so there's no need to install it seperately.
+npm is the package manager for JavaScript. npm ships with Node.js, so there's no need to install it separately.
 
 ### Using an existing npm package
 To get a sense for how to use npm packages in your app, let's try getting started with `express`, the most popular web framework for Node.js.
