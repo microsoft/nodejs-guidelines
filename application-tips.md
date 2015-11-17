@@ -42,7 +42,6 @@ ddbClient.queryDatabases('SELECT * from d WHERE d.id = "database_name"')
 * [tedious](https://www.npmjs.com/package/tedious) - TDS client written in JavaScript, no binary dependencies
 * [mssql](https://www.npmjs.com/package/mssql) - Friendly interface wrapper around SQL clients, tedious by default.
 * [mssql-ng](https://www.npmjs.com/package/mssql) - Next generation ES6-template interface for SQL (uses mssql/tedious).
->>>>>>> upstream/master
 
 ### Setting up and working with MongoDB
 
