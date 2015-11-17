@@ -10,7 +10,7 @@ Let's start with the basics.
   console.log('Hello World!');
   ```
 
-3. In the commmand prompt, run `node app.js`.
+3. In the command prompt, run `node app.js`.
 > :bulb: Your environment variables are set at the time when the command prompt is opened, so ensure to open a new command prompt since step 1 if you get any errors about Node not being found.
 
 4. Moving beyond from simple console applications...
@@ -35,7 +35,7 @@ Let's start with the basics.
   console.log('Listening on http://localhost:' + port);
   ```
 
-5. In the commmand prompt, run `node app.js`, and visit the url that's printed out to the console.
+5. In the command prompt, run `node app.js`, and visit the url that's printed out to the console.
 
 6. To stop the application, run `Ctrl+C`.
 
@@ -44,7 +44,7 @@ As shown above, it's pretty impressive what you can do with so few lines of code
 
 Introducing, npm!
 
-npm is the package manager for JavaScript. npm ships with Node.js, so there's no need to install it seperately.
+npm is the package manager for JavaScript. npm ships with Node.js, so there's no need to install it separately.
 
 ### Using an existing npm package
 To get a sense for how to use npm packages in your app, let's try getting started with `express`, the most popular web framework for Node.js.

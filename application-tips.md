@@ -1,6 +1,5 @@
 ## Application-specific tips and tricks
 > :triangular_flag_on_post: **TODO**
-* Setting up SQL.
 * .NET in-process using Edge.js.
 * [node-windows](https://github.com/coreybutler/node-windows): Windows services, logging, and commands using Node.js.
 
@@ -37,6 +36,13 @@ ddbClient.queryDatabases('SELECT * from d WHERE d.id = "database_name"')
             });
     });
 ```
+
+### Connecting to Microsoft SQL Server
+
+* [tedious](https://www.npmjs.com/package/tedious) - TDS client written in JavaScript, no binary dependencies
+* [mssql](https://www.npmjs.com/package/mssql) - Friendly interface wrapper around SQL clients, tedious by default.
+* [mssql-ng](https://www.npmjs.com/package/mssql) - Next generation ES6-template interface for SQL (uses mssql/tedious).
+>>>>>>> upstream/master
 
 ### Setting up and working with MongoDB
 
@@ -75,6 +81,13 @@ MongoClient.connect(mongoUrl, function (err, db) {
     }
 });
 ```
+
+### Azure Services
+
+* [azure](https://www.npmjs.com/package/azure) - Full client for azure
+* [azure-storage](https://www.npmjs.com/package/azure-storage) - client for Azure Storage services (Tables, Blobs, Files, Queues), which is part of the `azure` module above.
+* [azure-storage-simple](https://www.npmjs.com/package/azure-storage-simple) - Promise based interface wrapper around `azure-storage` with a simpler UI.
+
 
 ## Accessing platform APIs
 Sometimes you need to access plaform functionality for which no suitable module is available. For example your app may need to access the registry running on a Windows Server or Desktop. In this case there are 2 ways to proceed. 
