@@ -37,6 +37,7 @@ Note that this is not intended to be a comprehensive set of recommendations. Rat
 * [Anything you want!](CONTRIBUTING.md)
 
 ## Node.js + Microsoft products, services, and contributions
+* [**Visual Studio Developer Essentials**](https://www.visualstudio.com/products/visual-studio-dev-essentials-vs): The go-to collection of essential free tools and introductory subscriptions.
 * [**Visual Studio Code**](https://code.visualstudio.com/): Lightweight cross-platform editor for building and debugging modern web and cloud applications.
 * [**Node.js Tools for Visual Studio**](https://www.visualstudio.com/features/node-js-vs): Free, open-source extension that turns Visual Studio into a powerful Node.js development environment.
 * [**TypeScript**](https://www.npmjs.com/package/typescript): TypeScript is a language for application scale JavaScript development.
