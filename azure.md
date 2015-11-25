@@ -16,8 +16,17 @@
 
 ### Set environment variables in your node web app (CLI)
 
-First you need to install the `azure` CLI by running `npm install --global azure`.  Then you have to login to your Azure account through the CLI by running `azure login`.  These operations are one-time requirements.
+#### Install the azure CLI package and login (one-time)
 
-In order to set an environment variable (commonly used in node applications), run the following command... `azure site appsetting add NEW_ENVIRONMENT_VAR=yourValue your-web-app-name` where `NEW_ENVIRONMENT_VAR` is the new environment variable name, `yourValue` is the value to set the environment variable to, and `your-web-app-name` is the name of the web app that you intend to set the environment variable for.
+1. Install the Azure CLI: `npm install --global azure`
+2. Login to your Azure account: `azure login`
 
-Likewise, to list these out for the node web app run the following... `azure site appsetting list your-web-app-name`.
+#### Set environment variables in your Azure node web app
+
+`azure site appsetting add NEW_ENVIRONMENT_VAR=yourValue your-web-app-name`
+
+*`NEW_ENVIRONMENT_VAR` is the new environment variable name, `yourValue` is the value to set the environment variable to, and `your-web-app-name` is the name of the web app that you intend to set the environment variable for*
+
+#### List environment variables in your Azure node web app
+
+`azure site appsetting list your-web-app-name`.
