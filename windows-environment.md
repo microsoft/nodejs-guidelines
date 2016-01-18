@@ -71,8 +71,10 @@ How do you know if an npm package you want to install is a native module? Look f
 1. Install [VC++ Build Tools Technical Preview](https://www.microsoft.com/en-us/download/details.aspx?id=49983)
 > :bulb: [Windows 7 only] requires [.NET Framework 4.5.1](http://www.microsoft.com/en-us/download/details.aspx?id=40773)
 
-2. Install [Python 2.7](https://www.python.org/downloads/), and add it to your `PATH`, `npm config set python python2.7`
-3. Launch cmd, `npm config set msvs_version 2015 --global` (this is instead of `npm install [package name] --msvs_version=2015` every time.)
+2. Install [Python 2.7](https://www.python.org/downloads/), and add it to your `PATH` (by selecting the option in the installer or manually afterwards) 
+3. Launch cmd and run:
+  * `npm config set python python2.7`
+  * `npm config set msvs_version 2015 --global` (this is instead of `npm install [package name] --msvs_version=2015` every time.)
 4. *SO MUCH npm install* :tada:
 
 **Option 2: Visual Studio 2015** (takes longer)
