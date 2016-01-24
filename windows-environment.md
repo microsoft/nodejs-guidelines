@@ -69,25 +69,19 @@ How do you know if an npm package you want to install is a native module? Look f
 
 ### Environment setup and configuration:
 #### Prerequisites
-**Option 1: Standalone C++ Build Tools (Technical Preview)**
 
-1. Install [VC++ Build Tools Technical Preview](https://www.microsoft.com/en-us/download/details.aspx?id=49983)
-> :bulb: [Windows 7 only] requires [.NET Framework 4.5.1](http://www.microsoft.com/en-us/download/details.aspx?id=40773)
+1. Visual C++ Build Environment:
+  * Option 1: Install [Visual C++ Build Tools (Technical Preview)](http://go.microsoft.com/fwlink/?LinkId=691132), choose **Custom Install**, and select *both* the Windows 8.1 and Windows 10 SDKs.
 
-2. Install [Python 2.7](https://www.python.org/downloads/), and add it to your `PATH` (by selecting the option in the installer or manually afterwards) 
-3. Launch cmd and run:
-  * `npm config set python python2.7`
-  * `npm config set msvs_version 2015 --global` (this is instead of `npm install [package name] --msvs_version=2015` every time.)
-4. *SO MUCH npm install* :tada:
-
-**Option 2: Visual Studio 2015** (takes longer)
-* Download Python 2.7 (3.x will not work)
-* Download Visual Studio 2015 (free Community Edition and Express for Desktop work)
-
- > :bulb: During installation, be sure to check the the C++ option.
+  * Option 2: Install [Visual Studio 2015](https://www.visualstudio.com/products/visual-studio-community-vs) (or modify an existing installation) and select *Common Tools for Visual C++* during setup. This also works with the free Community and Express for Desktop editions.
+     
+   > :bulb: [Windows Vista / 7 only] requires [.NET Framework 4.5.1](http://www.microsoft.com/en-us/download/details.aspx?id=40773)
+    
+2. Install [Python 2.7](https://www.python.org/downloads/) (`v3.x.x` is not supported), and run `npm config set python python2.7`
+3. Launch cmd, `npm config set msvs_version 2015`
 
 > :chart_with_upwards_trend: **IN PROGRESS** there are currently two efforts underway to make it easier to install native modules.
-  * We recognize that installing full VS can be burdensome, so we're investigating ways to provide a bundle with just the required compiler dependencies on Windows. Watch [this thread](https://github.com/nodejs/node-gyp/issues/629) for updates.
+  * We recognize that installing full VS can be burdensome, and we released the more minimal Visual C++ Build tools to help resolve this issue. The Build Tools are still in Technical preview, so please let us know if you run into any Windows-specific configuration issues so we can address them in the next release, and watch [this thread](https://github.com/nodejs/node-gyp/issues/629) for updates.
   * There are [long-term](https://github.com/nodejs/build/issues/151) efforts underway to build and cache pre-compiled packages on a server to get rid of compiler dependencies altogether.
 
 #### Verify everything's working
