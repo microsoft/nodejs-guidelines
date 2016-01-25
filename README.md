@@ -31,6 +31,7 @@ Note that this is not intended to be a comprehensive set of recommendations. Rat
   * [MAX_PATH explanation and workarounds](windows-environment.md#max_path-explanation-and-workarounds)
   * [Compiling native Addon modules](windows-environment.md#compiling-native-addon-modules)
 * [Building for cross-platform](building-for-cross-platform.md)
+* [Windows services and settings](windows-services-and-settings.md)
 * [Deployment](deployment.md)
 * [Application-specific tips](application-tips.md)
 * [Node.js + Microsoft products, services, and contributions](README.md#nodejs--microsoft-products-services-and-contributions)
