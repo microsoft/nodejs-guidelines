@@ -71,7 +71,7 @@ How do you know if an npm package you want to install is a native module? Look f
 #### Prerequisites
 
 1. Visual C++ Build Environment:
-  * Option 1: Install [Visual C++ Build Tools (Technical Preview)](http://go.microsoft.com/fwlink/?LinkId=691132), choose **Custom Install**, and select *both* the Windows 8.1 and Windows 10 SDKs.
+  * Option 1: Install [Visual C++ Build Tools](http://go.microsoft.com/fwlink/?LinkId=691126) using the **Default Install** option.
 
   * Option 2: Install [Visual Studio 2015](https://www.visualstudio.com/products/visual-studio-community-vs) (or modify an existing installation) and select *Common Tools for Visual C++* during setup. This also works with the free Community and Express for Desktop editions.
      
