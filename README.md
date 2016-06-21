@@ -44,6 +44,7 @@ Note that this is not intended to be a comprehensive set of recommendations. Rat
 * [**TypeScript**](https://www.npmjs.com/package/typescript): TypeScript is a language for application scale JavaScript development.
   * Also useful for working with typescript is [tsd](https://www.npmjs.com/package/tsd), which enables you to quickly download TypeScript definition files.
 * [**Azure SDK for Node.js**](https://github.com/Azure/azure-sdk-for-node#readme): We provide both [fine-grained modules](https://www.npmjs.com/~windowsazure) for different Microsoft Azure services which you can install separately, and an [all-up module](https://www.npmjs.com/package/azure) which contains everything.
+* [**Azure Mobile Apps SDK**](https://github.com/Azure/azure-mobile-apps-node): an express middleware package which makes it easy to create a backend for your mobile application
 * [**Application Insights**](https://www.npmjs.com/~msftapplicationinsights): Monitor your application's performance and usage with just a few lines of code.
 * [**Node-Chakra and Windows IoT**](https://github.com/Microsoft/node#readme): This project enables Node.js to optionally use the Chakra JavaScript engine on Windows 10, allowing Node.js to run on Windows 10 IoT.
 * [**Visual Studio Online**](https://www.npmjs.com/~vsonline)
