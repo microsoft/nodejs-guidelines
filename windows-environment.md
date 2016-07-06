@@ -71,7 +71,7 @@ How do you know if an npm package you want to install is a native module? Look f
 #### Prerequisites
 
 1. Visual C++ Build Environment:
-  * Option 1: Install [Visual C++ Build Tools](http://go.microsoft.com/fwlink/?LinkId=691126) using the **Default Install** option.
+  * Option 1: Install [Visual C++ Build Tools](http://landinghub.visualstudio.com/visual-cpp-build-tools) using the **Default Install** option.
 
   * Option 2: Install [Visual Studio 2015](https://www.visualstudio.com/products/visual-studio-community-vs) (or modify an existing installation) and select *Common Tools for Visual C++* during setup. This also works with the free Community and Express for Desktop editions.
      
@@ -81,7 +81,7 @@ How do you know if an npm package you want to install is a native module? Look f
 3. Launch cmd, `npm config set msvs_version 2015`
 
 > :chart_with_upwards_trend: **IN PROGRESS** there are currently two efforts underway to make it easier to install native modules.
-  * We recognize that installing full VS can be burdensome, and we released the more minimal Visual C++ Build tools to help resolve this issue. The Build Tools are still in Technical preview, so please let us know if you run into any Windows-specific configuration issues so we can address them in the next release, and watch [this thread](https://github.com/nodejs/node-gyp/issues/629) for updates.
+  * We recognize that installing full VS can be burdensome, and we released the more minimal Visual C++ Build tools to help resolve this issue. Please let us know if you run into any Windows-specific configuration issues so we can address them in the next release, and watch [this thread](https://github.com/nodejs/node-gyp/issues/629) for updates.
   * There are [long-term](https://github.com/nodejs/build/issues/151) efforts underway to build and cache pre-compiled packages on a server to get rid of compiler dependencies altogether.
 
 #### Verify everything's working
