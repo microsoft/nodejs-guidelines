@@ -32,6 +32,9 @@ One of the pain points we hear from users is that the command line console in Wi
   * [Web Essentials](https://visualstudiogallery.msdn.microsoft.com/ee6e6d8c-c837-41fb-886a-6b50ae2d06a2) many useful tools for client and server dev.
   * [GitHub Extensions for Visual Studio](https://visualstudiogallery.msdn.microsoft.com/75be44fb-0794-4391-8865-c3279527e97d) (can installed by selecting during VS installation).
 
+* **WebStorm** is a lightweight yet powerful IDE, perfectly equipped for complex client-side development and server-side development with Node.js. It supports TypeScript 1.6, Flow, ES6, Angular 2, TSLint, npm scripts, and more. For more information, check out [jetbrains.com/webstorm](http://jetbrains.com/webstorm). 
+
+
 ## MAX_PATH explanation and workarounds
 For the uninitiated, MAX_PATH is a limitation with many Windows tools and APIs that sets the maximum path character length to 260 characters. There are some workarounds involving UNC paths, but unfortunately not all APIs support it, and that's not the default. This can be problematic when working with Node modules because dependencies are often installed in a nested manner.
 
