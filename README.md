@@ -35,6 +35,7 @@ Note that this is not intended to be a comprehensive set of recommendations. Rat
 * [Deployment](deployment.md)
 * [Application-specific tips](application-tips.md)
 * [Node.js + Microsoft products, services, and contributions](README.md#nodejs--microsoft-products-services-and-contributions)
+* [Node.js and Azure](azure.md)
 * [Anything you want!](CONTRIBUTING.md)
 
 ## Node.js + Microsoft products, services, and contributions
