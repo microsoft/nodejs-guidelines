@@ -49,6 +49,7 @@ For the uninitiated, MAX_PATH is a limitation with many Windows tools and APIs t
   * Or… > npm install –g npm-windows-upgrade
 * Future:
   * .NET file APIs:
+    * From Windows 10 Preview build 14352 (and the upcoming Anniversary edition due late July) there is an [opt-in policy](http://betanews.com/2016/05/29/long-paths-windows-10/) to remove the MAX_PATH Limit !!!!!  
     * The plan: https://www.youtube.com/watch?v=lpa2OFauASM
     * Progress :tada: https://github.com/dotnet/corefx/issues/645
 
