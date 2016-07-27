@@ -17,7 +17,7 @@ Note that this is not intended to be a comprehensive set of recommendations. Rat
 
 > :chart_with_upwards_trend: **IN PROGRESS** This provides awareness about an important issue that we're currently working on resolving.
 
-## Node.js tips, tricks, resources, and more!
+## Getting Started with Node.js
 * [Hello World](getting-started.md)
 * [Working with npm packages](getting-started.md#working-with-npm-packages)
   * [Using an existing npm package](getting-started.md#using-an-existing-npm-package)
@@ -36,7 +36,6 @@ Note that this is not intended to be a comprehensive set of recommendations. Rat
 * [Application-specific tips](application-tips.md)
 * [Node.js + Microsoft products, services, and contributions](README.md#nodejs--microsoft-products-services-and-contributions)
 * [Node.js and Azure](azure.md)
-* [Anything you want!](CONTRIBUTING.md)
 
 ## Node.js + Microsoft products, services, and contributions
 * [**Visual Studio Developer Essentials**](https://www.visualstudio.com/products/visual-studio-dev-essentials-vs): The go-to collection of essential free tools and introductory subscriptions.
@@ -54,6 +53,13 @@ Note that this is not intended to be a comprehensive set of recommendations. Rat
 * [**Others**](https://www.npmjs.com/~microsoft)
 
 > :triangular_flag_on_post: **TODO** Add other Microsoft services related to Node.js.
+
+
+## General Node.js tips, tricks, resources, and more!
+* [**Awesome node.js**](https://github.com/sindresorhus/awesome-nodejs): List of node packages and resources.
+* [**Javascript ES6 Features**](https://github.com/lukehoban/es6features): Comprehensive reference for new ECMAScript 6 features and changes.
+* [**Anything you want!**](CONTRIBUTING.md)
+
 
 ## Contributions Welcome!
 This is still a work in progress, an experiment - if you will, and we'd love your help to make it better! Please see our [contributing guidelines](CONTRIBUTING.md) for details.
