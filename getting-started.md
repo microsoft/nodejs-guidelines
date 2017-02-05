@@ -91,7 +91,7 @@ Once you start installing npm packages, you'll need a way to keep track of all o
 
 2. Npm will prompt you to fill in the details about your package.
 3. In the `package.json` file, there is a "dependencies" section, and within it, an entry for `"express"`. A value of `"*"` would mean that the latest version should be used. To add this entry automatically when you install a package, you can add a `--save` flag: `npm install express --save`.
- > :bulb: If you only require a dependency as part of a development environment, then you could/should install the package in the "devDependencies".  This is accomplished by using the `--save-dev` parameter. For example: `npm install --save-dev mocha`.
+ > :bulb: If you only require a dependency as part of a development environment, then you could/should install the package in the "[devDependencies](http://stackoverflow.com/questions/19223051/grunt-js-what-does-save-dev-mean-in-npm-install-grunt-save-dev)".  This is accomplished by using the `--save-dev` parameter. For example: `npm install --save-dev mocha`.
 
 4. Now that your packages are listed in `package.json`, npm will always know which dependencies are required for your app. If you ever need to restore your packages, you can run `npm install` from your package directory.
 
