@@ -9,8 +9,8 @@ One of the pain points we hear from users is that the command line console in Wi
 * **npm-windows-upgrade:** npm is shipped with Node.js, and upgrading on Windows often requires manual upgrade steps. npm-windows-upgrade makes this process much easier. Install it by running `npm install npm-windows-upgrade -g`, and run the command by running `npm-windows-upgrade`.
 * **terminal emulators:** cmder and ConEmu.
 * **Cygwin:** [Cygwin](http://cygwin.com/index.html) can be handy if you're more familiar with bash, or are trying to use a Node app that assumes a *nix environment. Cygwin is a distribution of popular GNU and other open source tools running on Microsoft Windows. The core part is the Cygwin library which provides the POSIX system calls and environment these programs expect.
-* **Git for Windows** [Git for windows](https://git-for-windows.github.io/) provides native versions of the BASH shell and some *nix utilites in addition to the command line git and GUI tool. It is probably the best of shells based on MSYS/MinGW but still supplies ports of older versions of the *nix utilities. Works very well in combination with [ConEmu](https://conemu.github.io/).    
-* **GitHub Desktop** [GitHub Desktop](https://desktop.github.com/) (previosuly GitHub for Windows) is primarilarly a GUI but it also includes a version of MSYS/MinGW Bash.  
+* **Git for Windows** [Git for windows](https://git-for-windows.github.io/) provides native versions of the BASH shell and some *nix utilites in addition to the command line git and GUI tool. It is probably the best of shells based on MSYS/MinGW but still supplies ports of older versions of the *nix utilities. Works very well in combination with [ConEmu](https://conemu.github.io/).
+* **GitHub Desktop** [GitHub Desktop](https://desktop.github.com/) (previosuly GitHub for Windows) is primarilarly a GUI but it also includes a version of MSYS/MinGW Bash.
 * **Putty:** ssh client.
 * **WinSCP:** free [S]FTP client, also supports SCP and webDAV.
 * **Fiddler:** a web debugging tool. In general, people use it for the browser-side debugging, but you can also [configure it](http://stackoverflow.com/questions/8697344/can-a-proxy-like-fiddler-be-used-with-node-jss-clientrequest) to view server-side requests from Node.js.
@@ -32,7 +32,7 @@ One of the pain points we hear from users is that the command line console in Wi
   * [Web Essentials](https://visualstudiogallery.msdn.microsoft.com/ee6e6d8c-c837-41fb-886a-6b50ae2d06a2) many useful tools for client and server dev.
   * [GitHub Extensions for Visual Studio](https://visualstudiogallery.msdn.microsoft.com/75be44fb-0794-4391-8865-c3279527e97d) (can installed by selecting during VS installation).
 
-* **WebStorm** is a lightweight yet powerful IDE, perfectly equipped for complex client-side development and server-side development with Node.js. It supports TypeScript 1.6, Flow, ES6, Angular 2, TSLint, npm scripts, and more. For more information, check out [jetbrains.com/webstorm](http://jetbrains.com/webstorm). 
+* **WebStorm** is a lightweight yet powerful IDE, perfectly equipped for complex client-side development and server-side development with Node.js. It supports TypeScript 1.6, Flow, ES6, Angular 2, TSLint, npm scripts, and more. For more information, check out [jetbrains.com/webstorm](http://jetbrains.com/webstorm).
 
 
 ## MAX_PATH explanation and workarounds
@@ -42,19 +42,19 @@ For the uninitiated, MAX_PATH is a limitation with many Windows tools and APIs t
 
 * :heart: Start in a short path (e.g. c:\src)
 * `> npm install -g rimraf`
-  delete files that exceed max_path
+    delete files that exceed max_path
 * `> npm dedupe`
-  moves duplicate packages to top-level
+    moves duplicate packages to top-level
 * `> npm install -g flatten-packages`
-  moves all packages to top-level, but can cause versioning issues
-* :heart: Upgrade to npm@3 which attempts to the make the `node_modules` folder heirarchy maximally flat. 
-  * Ships with Node v5
-  * Or… > npm install –g npm-windows-upgrade
+    moves all packages to top-level, but can cause versioning issues
+* :heart: Upgrade to npm@3 which attempts to the make the `node_modules` folder heirarchy maximally flat.
+    * Ships with Node v5
+    * Or… `> npm install –g npm-windows-upgrade`
 * Future:
-  * .NET file APIs:
-    * From Windows 10 Preview build 14352 (and the upcoming Anniversary edition due late July) there is an [opt-in policy](http://betanews.com/2016/05/29/long-paths-windows-10/) to remove the MAX_PATH Limit !!!!!  
-    * The plan: https://www.youtube.com/watch?v=lpa2OFauASM
-    * Progress :tada: https://github.com/dotnet/corefx/issues/645
+    * `.NET` file APIs:
+        * From Windows 10 Preview build 14352 (and the upcoming Anniversary edition due late July) there is an [opt-in policy](http://betanews.com/2016/05/29/long-paths-windows-10/) to remove the MAX_PATH Limit !!!!!
+        * The plan: https://www.youtube.com/watch?v=lpa2OFauASM
+        * Progress :tada: https://github.com/dotnet/corefx/issues/645
 
 For additional discussion, please see https://github.com/Microsoft/nodejstools/issues/69
 
@@ -76,18 +76,22 @@ How do you know if an npm package you want to install is a native module? Look f
 
 * Option 1: Install all the required tools and configurations using Microsoft's [windows-build-tools](https://github.com/felixrieseberg/windows-build-tools) by running `npm install -g windows-build-tools` from an elevated PowerShell (run as Administrator).
 * Option 2: Install dependencies and configuration manually
-   1. Visual C++ Build Environment:
-     * Option 1: Install [Visual C++ Build Tools](http://go.microsoft.com/fwlink/?LinkId=691126) using the **Default Install** option.
-     * Option 2: Install [Visual Studio 2015](https://www.visualstudio.com/products/visual-studio-community-vs) (or modify an existing installation) and select *Common Tools for Visual C++* during setup. This also works with the free Community and Express for Desktop editions.
-        
-      > :bulb: [Windows Vista / 7 only] requires [.NET Framework 4.5.1](http://www.microsoft.com/en-us/download/details.aspx?id=40773)
-       
- 2. Install [Python 2.7](https://www.python.org/downloads/) (`v3.x.x` is not supported), and run `npm config set python python2.7`
- 3. Launch cmd, `npm config set msvs_version 2015`
+
+     1. Visual C++ Build Environment:
+
+         * Option 1: Install [Visual C++ Build Tools](http://go.microsoft.com/fwlink/?LinkId=691126) using the **Default Install** option.
+         * Option 2: Install [Visual Studio 2015](https://www.visualstudio.com/products/visual-studio-community-vs) (or modify an existing installation) and select *Common Tools for Visual C++* during setup. This also works with the free Community and Express for Desktop editions.
+
+         :bulb: [Windows Vista / 7 only] requires [.NET Framework 4.5.1](http://www.microsoft.com/en-us/download/details.aspx?id=40773)
+
+     2. Install [Python 2.7](https://www.python.org/downloads/) (`v3.x.x` is not supported), and run `npm config set python python2.7`
+     3. Launch cmd, `npm config set msvs_version 2015`
 
 > :chart_with_upwards_trend: **IN PROGRESS** there are currently two efforts underway to make it easier to install native modules.
-  * We recognize that installing full VS can be burdensome, and we released the more minimal Visual C++ Build tools to help resolve this issue. The Build Tools are still in Technical preview, so please let us know if you run into any Windows-specific configuration issues so we can address them in the next release, and watch [this thread](https://github.com/nodejs/node-gyp/issues/629) for updates.
-  * There are [long-term](https://github.com/nodejs/build/issues/151) efforts underway to build and cache pre-compiled packages on a server to get rid of compiler dependencies altogether.
+
+* We recognize that installing full VS can be burdensome, and we released the more minimal Visual C++ Build tools to help resolve this issue. The Build Tools are still in Technical preview, so please let us know if you run into any Windows-specific configuration issues so we can address them in the next release, and watch [this thread](https://github.com/nodejs/node-gyp/issues/629) for updates.
+
+* There are [long-term](https://github.com/nodejs/build/issues/151) efforts underway to build and cache pre-compiled packages on a server to get rid of compiler dependencies altogether.
 
 #### Verify everything's working
 Here are a few packages you can try installing to see if your environment is set up properly.
@@ -101,16 +105,15 @@ Here are a few packages you can try installing to see if your environment is set
 
 #### Resolving common issues
 
-| Errors about...                                              | Issue                                                             | Resolution                                                                                                                                                                                                                                                                                                                                                       |
-|--------------------------------------------------------------|-------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Errors about...    | Issue   | Resolution  |
+|----------------    |---------|-------------|
 | **Python**                                                   | Python 2.7 is not installed or can't be found                     | <ul> <li>Install Python 2.7 and add to PATH</li> <li>Specifiy --python=2.7 during npm install</li> <li>npm config set python 2.7 to set default</li> </ul>                                                                                                                                                                                                                                              |
 | **Inability to find msbuild, Visual Studio, or VC compiler** | VC compiler not installed, or environment not properly configured | <ul> <li>Install VC++ compiler</li> <li>Specify --msvs_version=2015 (or other VS version)</li> <li>npm config set msvs_version 2015 -g</li> </ul>                                                                                                                                                                                                                                                       |
 | **NaN/Node/v8/iojs-related syntax errors**                   | Package incompatible with current version of Node.js              | <ul> <li>Upgrade to latest version of package + node.js, and see if issue still exists</li> <li>Search issues and/or file an issue on package repo</li> </ul>                                                                                                                                                                                                                                           |
 | **Other syntax errors**                                      | Incompatible with compiler version                                | <ul> <li>Upgrade to latest version of package + node.js, and see if issue still exists</li> <li>Search issues and/or file an issue on package repo</li> </ul>                                                                                                                                                                                                                                           |
-| **Missing command or *.h file**                              | Configuration is probably fine, but missing other prerequisites   | <ul> <li>Upgrade to latest version of package</li> <li>Check docs, try to install missing prerequisites, ensure they're accessible in PATH</li> <li>Search for header file or other pre-requisite that's missing, that may provide a clue where it's supposed to come from (e.g. Windows SDK not installed, OpenSSL, etc.)</li> <li>Search issues and/or file an issue on package repository</li> </ul>
-                                  |
-| **MSB4019 error**                                      | Older versions of Visual Studio or C++ Build tools already installed                               | <ul> <li>Add or modify the environment variable `VCTargetsPath` top point at the C++ build tools path. This should be something like `C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\v140` (where 140 corresponds to Visual Studio 2015)</li> <li>Search issues and/or file an issue on package repo</li> </ul>                                                                                                                                                                                                                                           |
-| **__pfnDliNotifyHook2 redefinition error**                   |                                | <ul> <li>Run `npm -g install npm@next`</li> </ul>                                                                                                                                                                                                                                           |
+| **Missing command or *.h file**                              | Configuration is probably fine, but missing other prerequisites   | <ul> <li>Upgrade to latest version of package</li> <li>Check docs, try to install missing prerequisites, ensure they're accessible in PATH</li> <li>Search for header file or other pre-requisite that's missing, that may provide a clue where it's supposed to come from (e.g. Windows SDK not installed, OpenSSL, etc.)</li> <li>Search issues and/or file an issue on package repository</li> </ul> |
+| **MSB4019 error**     | Older versions of Visual Studio or C++ Build tools already installed   | <ul> <li>Add or modify the environment variable `VCTargetsPath` top point at the C++ build tools path. This should be something like `C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\v140` (where 140 corresponds to Visual Studio 2015)</li> <li>Search issues and/or file an issue on package repo</li> </ul> |
+| **__pfnDliNotifyHook2 redefinition error**     |      | <ul> <li>Run `npm -g install npm@next`</li> </ul> |
 
 
 #### Deploying native modules
