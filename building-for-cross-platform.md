@@ -1,3 +1,3 @@
 ## Writing cross-platform modules and apps
-* http://shapeshed.com/writing-cross-platform-node/
-* https://gist.github.com/domenic/2790533
+* [Writing cross-platform Node.js on shapeshed.com](http://shapeshed.com/writing-cross-platform-node/)
+* [domenic/portable-node.md](https://gist.github.com/domenic/2790533)
