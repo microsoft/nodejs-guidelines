@@ -21,19 +21,19 @@ One of the pain points we hear from users is that the command line console in Wi
 > :chart_with_upwards_trend: **IN PROGRESS** We're currently planning the next Windows release, so it's a great time to let us know your biggest command line pain points!
 
 ## Editors and IDEs
-* **[Visual Studio Code](https://code.visualstudio.com/)** is a lightweight, cross-platform IDE that offers powerful [editing](https://code.visualstudio.com/Docs/editor/editingevolved), [debugging](https://code.visualstudio.com/Docs/editor/debugging), and [git integration](https://code.visualstudio.com/Docs/editor/versioncontrol) for [Node.js development](https://code.visualstudio.com/docs/runtimes/nodejs). Several Visual Studio Code extension may be useful for Node.js development:
-  * [eslint](https://marketplace.visualstudio.com/items/dbaeumer.vscode-eslint) integrates the `eslint` linter.
-  * [npm script runner](https://marketplace.visualstudio.com/items/eg2.vscode-npm-script) supports to run npm scripts from the command palette.
-  * [EditorConfig](https://marketplace.visualstudio.com/items/chrisdias.vscodeEditorConfig) consistent editor spaces and indents.
+* **[Visual Studio Code](https://code.visualstudio.com/)** is a lightweight, cross-platform IDE that offers powerful [editing](https://code.visualstudio.com/Docs/editor/editingevolved), [debugging](https://code.visualstudio.com/Docs/editor/debugging), and [version control integration](https://code.visualstudio.com/Docs/editor/versioncontrol) for [Node.js development](https://code.visualstudio.com/docs/runtimes/nodejs). Several Visual Studio Code extension may be useful for Node.js development:
+  * [eslint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) integrates the `eslint` linter.
+  * [npm script runner](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script) adds support for running npm scripts from the command palette.
+  * [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig) helps enforce consistent editor spaces and indents.
 
 * **[Node.js Tools for Visual Studio](https://aka.ms/explorentvs)** is a free, open-source extension that turns Visual Studio into a powerful Node.js IDE: intelligent code completions, advanced debugging and profiling, cloud deployment, unit-testing, REPL window, and more. For more information, check out these [walkthrough](https://channel9.msdn.com/events/Visual-Studio/Connect-event-2015/801) and  [overview](https://channel9.msdn.com/Blogs/Seth-Juarez/Nodejs-Tools-for-Visual-Studio) videos. Note that while Visual Studio can be used as a stand-alone additional IDE 'layer' to a comprehensive commandline based workflow, several Visual Studio extensions may also prove useful:
-  * [EditorConfig](https://visualstudiogallery.msdn.microsoft.com/c8bccfe2-650c-4b42-bc5c-845e21f96328) consistent editor spaces and indents.
-  * [NPM scripts task runner](https://visualstudiogallery.msdn.microsoft.com/8f2f2cbc-4da5-43ba-9de2-c9d08ade4941) adds npm scripts to the Visual Studio task runner explorer.
-  * [Web Analyzer](https://visualstudiogallery.msdn.microsoft.com/6edc26d4-47d8-4987-82ee-7c820d79be1d) various linting tools incl. ESLint.
-  * [Web Essentials](https://visualstudiogallery.msdn.microsoft.com/ee6e6d8c-c837-41fb-886a-6b50ae2d06a2) many useful tools for client and server dev.
-  * [GitHub Extensions for Visual Studio](https://visualstudiogallery.msdn.microsoft.com/75be44fb-0794-4391-8865-c3279527e97d) (can installed by selecting during VS installation).
+  * [EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfigTeam.EditorConfig) helps enforce consistent editor spaces and indents.
+  * [NPM scripts task runner](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.NPMTaskRunner) adds support for running npm scripts from the Visual Studio task runner explorer.
+  * [Web Analyzer](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebAnalyzer) provides various linting tools, including the `eslint` linter.
+  * [Web Essentials](https://marketplace.visualstudio.com/items?itemName=MadsKristensen.WebEssentials20153) adds many useful tools for client and server dev.
+  * [GitHub Extensions for Visual Studio](https://marketplace.visualstudio.com/items?itemName=GitHub.GitHubExtensionforVisualStudio) makes it easy to connect to and work with GitHub repositories and can installed during Visual Studio installation.
 
-* **WebStorm** is a lightweight yet powerful IDE, perfectly equipped for complex client-side development and server-side development with Node.js. It supports TypeScript 1.6, Flow, ES6, Angular 2, TSLint, npm scripts, and more. For more information, check out [jetbrains.com/webstorm](http://jetbrains.com/webstorm). 
+* **[WebStorm](https://www.jetbrains.com/webstorm/)** is a lightweight yet powerful IDE, perfectly equipped for complex client-side development and server-side development with Node.js. It boasts [a lot of features](https://www.jetbrains.com/webstorm/features/), including support for both JavaScript and TypeScript, framework support (Angular, React, Vue.js, Meteor, etc.), code quality tools (TSLint, ESLint, etc.), build tools (Gulp, Grunt or npm), debugging, testing and more.
 
 
 ## MAX_PATH explanation and workarounds
