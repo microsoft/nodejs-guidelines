@@ -42,7 +42,7 @@ Note that this is not intended to be a comprehensive set of recommendations. Rat
 * [**Visual Studio Code**](https://code.visualstudio.com/): Lightweight cross-platform editor for building and debugging modern web and cloud applications.
 * [**Node.js Tools for Visual Studio**](https://www.visualstudio.com/features/node-js-vs): Free, open-source extension that turns Visual Studio into a powerful Node.js development environment.
 * [**TypeScript**](https://www.npmjs.com/package/typescript): TypeScript is a language for application scale JavaScript development.
-  * Also useful for working with typescript is [tsd](https://www.npmjs.com/package/tsd), which enables you to quickly download TypeScript definition files.
+  * For existing typings checkout @types from NPM or use Microsoft´s own [**TypeSearch**](https://microsoft.github.io/TypeSearch/)
 * [**Azure SDK for Node.js**](https://github.com/Azure/azure-sdk-for-node#readme): We provide both [fine-grained modules](https://www.npmjs.com/~windowsazure) for different Microsoft Azure services which you can install separately, and an [all-up module](https://www.npmjs.com/package/azure) which contains everything.
 * [**Azure Mobile Apps SDK**](https://github.com/Azure/azure-mobile-apps-node): an express middleware package which makes it easy to create a backend for your mobile application
 * [**Application Insights**](https://www.npmjs.com/~msftapplicationinsights): Monitor your application's performance and usage with just a few lines of code.
