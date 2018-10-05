@@ -18,21 +18,21 @@ Let's start with the basics.
   /* app.js */
 
   // Load the built-in 'http' module.
-  var http = require('http');
+  const http = require('http');
 
   // Create an http.Server object, and provide a callback that fires after 'request' events.
-  var server = http.createServer(function (request, response) {
-     // Respond to the http request with "Hello World" and a basic header.
-     response.writeHead(200, {'Content-Type': 'text/plain'});
-     response.end('Hello World!\n');
+  const server = http.createServer((request, response) => {
+    // Respond to the http request with "Hello World" and a basic header.
+    response.writeHead(200, {'Content-Type': 'text/plain'});
+    response.end('Hello World!\n');
   });
 
   // Try retrieving a port from an environment variable, otherwise fallback to 8080.
-  var port = process.env.PORT || 8080;
+  const port = process.env.PORT || 8080;
 
   // Start listening on the specified port and print out a url to visit.
   server.listen(port);
-  console.log('Listening on http://localhost:' + port);
+  console.log(`Listening on http://localhost:${port}`);
   ```
 
 5. In the command prompt, run `node app.js`, and visit the url that's printed out to the console.
@@ -62,17 +62,17 @@ To get a sense for how to use npm packages in your app, let's try getting starte
   ```js
   /* app.js */
 
-  var express = require('express');
-  var app = express();
+  const express = require('express');
+  const app = express();
 
-  app.get('/', function (req, res) {
+  app.get('/', (req, res) => {
     res.send('Hello World!');
   });
 
-  var port = process.env.PORT || 3000;
-
-  app.listen(port);
-  console.log('Listening on http://localhost:' + port);
+  const port = process.env.PORT || 3000;
+  app.listen(port, () => {
+    console.log(`Listening on http://localhost:${port}`);
+  });
   ```
 
 3. Start the app by running `node app.js` in the command line. Tada!
