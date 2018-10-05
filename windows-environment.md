@@ -1,19 +1,20 @@
 # Configuring your Windows development environment
+
 ## Command line console and other useful tools
 One of the pain points we hear from users is that the command line console in Windows could use some work. We hear ya, and we're [working on it](https://wpdev.uservoice.com/forums/266908). In the meantime, we want to enable you to have the best experience possible. So here are some links to recommended tools to complement your existing experience.
 * **cmd:** cmd has had some improvements in Windows 10, so be sure to check it out if you abandoned ship in the past :smiley:. When you're working with Node.js, chances are you'll be spending a bit more time in the console, so it's well worth brushing up on your CLI commands.
 * **PowerShell:** PowerShell is a powerful object-oriented shell (as opposed to a text-based shell). It's a bit of a learning curve, but well worth it. It also has a bunch of aliases for commands, like `ls`, that'll make bash-happy people feel more at home. Here's a [good walkthrough](https://developer.rackspace.com/blog/powershell-101-from-a-linux-guy/) of some PowerShell commands from a *nix perspective, and there are [many other resources](https://technet.microsoft.com/en-us/scriptcenter/dd742419.aspx) to help you get started.
-* **Chocolatey:** [Chocolatey](https://chocolatey.org) is the apt-get of Windows. There are also some other alternatives like Ninite which have their own advantages, but Chocolatey is the most commonly used.
-* **Git:** `choco install git`.
-* **nvm-windows:** https://github.com/coreybutler/nvm-windows - there are new versions of Node.js coming out all the time, so it can be annoying to migrate between versions. nvm-windows makes it way easier to switch between various versions.
+* **Chocolatey:** [Chocolatey](https://chocolatey.org) is the apt-get of Windows. There are also some other alternatives, like [Ninite](https://ninite.com/), which have their own advantages, but Chocolatey is the most commonly used.
+* **Git:** `choco install git` or download Git from [the official downloads page](https://git-scm.com/downloads).
+* **nvm-windows:** https://github.com/coreybutler/nvm-windows - there are new versions of Node.js coming out all the time, and it can be annoying to migrate between versions. nvm-windows makes it way easier to switch between various versions.
 * **npm-windows-upgrade:** npm is shipped with Node.js, and upgrading on Windows often requires manual upgrade steps. npm-windows-upgrade makes this process much easier. Install it by running `npm install npm-windows-upgrade -g`, and run the command by running `npm-windows-upgrade`.
-* **terminal emulators:** cmder and ConEmu.
+* **terminal emulators:** Terminal emulators can enhance your terminal experience with themes, tabs and advanced configuratability. Popular emulators include [cmder](http://cmder.net/), [ConEmu](https://conemu.github.io/) and [Hyper](https://hyper.is/).
 * **Cygwin:** [Cygwin](http://cygwin.com/index.html) can be handy if you're more familiar with bash, or are trying to use a Node app that assumes a *nix environment. Cygwin is a distribution of popular GNU and other open source tools running on Microsoft Windows. The core part is the Cygwin library which provides the POSIX system calls and environment these programs expect.
 * **Git for Windows** [Git for windows](https://git-for-windows.github.io/) provides native versions of the BASH shell and some *nix utilites in addition to the command line git and GUI tool. It is probably the best of shells based on MSYS/MinGW but still supplies ports of older versions of the *nix utilities. Works very well in combination with [ConEmu](https://conemu.github.io/).    
 * **GitHub Desktop** [GitHub Desktop](https://desktop.github.com/) (previosuly GitHub for Windows) is primarilarly a GUI but it also includes a version of MSYS/MinGW Bash.  
-* **Putty:** ssh client.
-* **WinSCP:** free [S]FTP client, also supports SCP and webDAV.
-* **Fiddler:** a web debugging tool. In general, people use it for the browser-side debugging, but you can also [configure it](http://stackoverflow.com/questions/8697344/can-a-proxy-like-fiddler-be-used-with-node-jss-clientrequest) to view server-side requests from Node.js.
+* **Putty:** an SSH and telnet client: https://www.putty.org/.
+* **WinSCP:** an (S)FTP client that also supports SCP and webDAV: https://winscp.net/.
+* **Fiddler:** a web debugging tool: https://www.telerik.com/fiddler. In general, people use it for the browser-side debugging, but you can also [configure it](http://stackoverflow.com/questions/8697344/can-a-proxy-like-fiddler-be-used-with-node-jss-clientrequest) to view server-side requests from Node.js.
 
 > :triangular_flag_on_post: **TODO** Provide more dev environment options and a PowerShell script to make things easier.
 
