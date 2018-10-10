@@ -2,6 +2,8 @@
 Let's start with the basics.
 
 1. Install Node.js: https://nodejs.org.
+> :bulb: This code will need at least version 5.0.0, but we encourage you to run at least version 10.0.0. If you already had node installed, make sure the version is appropriate by running `node -v`
+
 > :bulb: When you install Node.js, you'll want to ensure your `PATH` variable is set to your install path so you can call Node from anywhere.
 
 2. Create a new directory named `hello-world`, add a new `app.js` file:
