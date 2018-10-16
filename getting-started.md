@@ -92,7 +92,7 @@ Once you start installing npm packages, you'll need a way to keep track of all o
   ```
 
 2. Npm will prompt you to fill in the details about your package.
-3. In the `package.json` file, there is a "dependencies" section, and within it, an entry for `"express"`. A value of `"*"` would mean that the latest version should be used. To add this entry automatically when you install a package, you can add a `--save` flag: `npm install express --save`.
+3. In the `package.json` file, there is a "dependencies" section, and within it, an entry for `"express"`. A value of `"*"` would mean that the latest version should be used. To add this entry automatically when you install a package, you can add a `--save` flag: `npm install express --save`.To save this as a dev dependency, use `npm install express --save-dev`.
  > :bulb: If you only require a dependency as part of a development environment, then you could/should install the package in the "[devDependencies](http://stackoverflow.com/questions/19223051/grunt-js-what-does-save-dev-mean-in-npm-install-grunt-save-dev)".  This is accomplished by using the `--save-dev` parameter. For example: `npm install --save-dev mocha`.
 
 4. Now that your packages are listed in `package.json`, npm will always know which dependencies are required for your app. If you ever need to restore your packages, you can run `npm install` from your package directory.
@@ -119,7 +119,7 @@ We went through locally installed packages above, and installing packages global
 
   > :bulb: The module will be installed to the path indicated by `npm bin -g`.
 
-2. Run `http-server .` to start a basic fileserver from any directory.
+2. Run `http-server .` to start a basic fileserver from any directory. On running this command , the server starts and runs on the localhost.
 
 > :bulb: In fact the only difference when using -g is that executables are placed in a folder that is on the path. If you install without the -g option you can still access those executables in `.\node_modules\.bin`. This folder is automatically added to the path when any scripts defined in `package.json` are run. Doing this will help avoid version clashes when a project uses skrinkwrap or otherwise specifies the version of a module different to other projects. It also avoids the need for manual install instructions for some dependencies so a single "npm install" will do.
 
