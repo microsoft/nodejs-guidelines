@@ -79,6 +79,7 @@ How do you know if an npm package you want to install is a native module? Look f
 
 * Option 2: Install dependencies and configuration manually
     1. Install Visual C++ Build Environment: [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools) (using "Visual C++ build tools" workload) or [Visual Studio 2017 Community](https://visualstudio.microsoft.com/pl/thank-you-downloading-visual-studio/?sku=Community) (using the "Desktop development with C++" workload)
+        * If you are building a native Node.js module for Windows 10 on ARM (ARM64 Windows desktop), you will need Visual Studio 2017 >=15.9.0 with Windows SDK >=10.0.17763.0, Visual C++ compilers and libraries for ARM64, and Visual C++ ATL for ARM64.
     2. Install [Python 2.7](https://www.python.org/downloads/) (`v3.x.x` is not supported), and run `npm config set python python2.7`
     3. Launch cmd, `npm config set msvs_version 2017`
 
@@ -107,3 +108,5 @@ Here are a few packages you can try installing to see if your environment is set
 
 #### Deploying native modules
 Sometimes, when deploying a native module to production, oftentimes it is not possible to set up the production machine with all the required prerequisites to build the native Addon. Therefore, building locally or on a CI server and deploying `node_modules` may be the best option assuming there aren't any platform differences between the development and deployment machines.
+
+If you plan to publish pre-built native modules on NPM, kindly consider including an ARM64 version along with your x64 and x86 versions. :smiley:
