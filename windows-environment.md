@@ -79,7 +79,7 @@ How do you know if an npm package you want to install is a native module? Look f
 
 * Option 2: Install dependencies and configuration manually
     1. Install Visual C++ Build Environment: [Visual Studio Build Tools](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=BuildTools) (using "Visual C++ build tools" workload) or [Visual Studio 2017 Community](https://visualstudio.microsoft.com/pl/thank-you-downloading-visual-studio/?sku=Community) (using the "Desktop development with C++" workload)
-    2. Install [Python 2.7](https://www.python.org/downloads/) (`v3.x.x` is not supported), and run `npm config set python python2.7`
+    2. Install [Python](https://www.python.org/downloads/)
     3. Launch cmd, `npm config set msvs_version 2017`
 
 #### Verify everything's working
