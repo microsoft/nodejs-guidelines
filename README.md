@@ -59,7 +59,9 @@ Note that this is not intended to be a comprehensive set of recommendations. Rat
 * [Nodejs.org](https://nodejs.org): Official Node.js website
 * [**Awesome node.js**](https://github.com/sindresorhus/awesome-nodejs): List of node packages and resources.
 * [**Javascript ES6 Features**](https://github.com/lukehoban/es6features): Comprehensive reference for new ECMAScript 6 features and changes.
+* [**Microsoft Virtual Academy**](https://mva.microsoft.com/): Free Microsoft training delivered by experts, including courses on Node.js.
 * [**nodeschool.io**](https://nodeschool.io/): Node.js community events, tutorials and meetups
+* [**Pluralsight's Node.js Learning Path**](https://app.pluralsight.com/paths/skills/node-js): 32 hours of content across 10 courses.
 * [**Anything you want!**](CONTRIBUTING.md)
 
 
