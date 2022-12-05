@@ -60,6 +60,7 @@ Note that this is not intended to be a comprehensive set of recommendations. Rat
 * [**Awesome node.js**](https://github.com/sindresorhus/awesome-nodejs): List of node packages and resources.
 * [**Javascript ES6 Features**](https://github.com/lukehoban/es6features): Comprehensive reference for new ECMAScript 6 features and changes.
 * [**nodeschool.io**](https://nodeschool.io/): Node.js community events, tutorials and meetups
+* [**NodeJS Discord Community**](https://discord.gg/Uaq5RHu): Node.js unofficial Discord community
 * [**Anything you want!**](CONTRIBUTING.md)
 
 
